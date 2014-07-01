@@ -7,18 +7,15 @@
 //
 
 import XCTest
+import TKit
 import UIKit
 
 class TKitTests: XCTestCase {
-    var view: UIView = UIView()
     
     override func setUp() {
         super.setUp()
-        view = UIView()
-        
+        let view = UIView()
         var test = ["hi", "bye"]
-
-        // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
     override func tearDown() {
@@ -28,11 +25,8 @@ class TKitTests: XCTestCase {
     
     func testExample() {
         println("")
-        
-        view.setX(2)
-        println(view.x())
-        
-        XCTAssert(true, "Pass")
+
+        XCTAssert(10 == 10, "Pass")
     }
     
     func testPerformanceExample() {

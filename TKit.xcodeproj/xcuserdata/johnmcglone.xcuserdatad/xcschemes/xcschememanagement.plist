@@ -9,6 +9,11 @@
 			<key>orderHint</key>
 			<integer>0</integer>
 		</dict>
+		<key>TKitExamples.xcscheme</key>
+		<dict>
+			<key>orderHint</key>
+			<integer>1</integer>
+		</dict>
 	</dict>
 	<key>SuppressBuildableAutocreation</key>
 	<dict>
@@ -18,6 +23,16 @@
 			<true/>
 		</dict>
 		<key>F01FD59B195BDB490072BB0A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F01FD5DC19627C0C0072BB0A</key>
+		<dict>
+			<key>primary</key>
+			<true/>
+		</dict>
+		<key>F01FD5ED19627C0D0072BB0A</key>
 		<dict>
 			<key>primary</key>
 			<true/>

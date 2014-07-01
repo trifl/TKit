@@ -8,22 +8,32 @@
 
 /* Begin PBXBuildFile section */
 		F01FD597195BDB490072BB0A /* TKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F01FD596195BDB490072BB0A /* TKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		F01FD59D195BDB490072BB0A /* TKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F01FD591195BDB480072BB0A /* TKit.framework */; };
 		F01FD5A4195BDB490072BB0A /* TKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01FD5A3195BDB490072BB0A /* TKitTests.swift */; };
 		F01FD5B2195BDF8B0072BB0A /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01FD5B1195BDF8B0072BB0A /* UIView.swift */; };
-		F01FD5B3195BDF8B0072BB0A /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01FD5B1195BDF8B0072BB0A /* UIView.swift */; };
 		F01FD5CF19612F550072BB0A /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01FD5CE19612F550072BB0A /* CGFloat.swift */; };
+		F01FD5E219627C0D0072BB0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01FD5E119627C0D0072BB0A /* AppDelegate.swift */; };
+		F01FD5E419627C0D0072BB0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01FD5E319627C0D0072BB0A /* ViewController.swift */; };
+		F01FD5E719627C0D0072BB0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F01FD5E519627C0D0072BB0A /* Main.storyboard */; };
+		F01FD5E919627C0D0072BB0A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F01FD5E819627C0D0072BB0A /* Images.xcassets */; };
+		F01FD5FD19627DC30072BB0A /* TKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F01FD591195BDB480072BB0A /* TKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		F01FD59E195BDB490072BB0A /* PBXContainerItemProxy */ = {
+		F01FD5D0196275BC0072BB0A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F01FD588195BDB480072BB0A /* Project object */;
 			proxyType = 1;
 			remoteGlobalIDString = F01FD590195BDB480072BB0A;
 			remoteInfo = TKit;
 		};
-		F01FD5B4195BE2C90072BB0A /* PBXContainerItemProxy */ = {
+		F01FD5D2196275BD0072BB0A /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F01FD588195BDB480072BB0A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F01FD590195BDB480072BB0A;
+			remoteInfo = TKit;
+		};
+		F01FD5D4196275C00072BB0A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F01FD588195BDB480072BB0A /* Project object */;
 			proxyType = 1;
@@ -41,6 +51,12 @@
 		F01FD5A3195BDB490072BB0A /* TKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TKitTests.swift; sourceTree = "<group>"; };
 		F01FD5B1195BDF8B0072BB0A /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		F01FD5CE19612F550072BB0A /* CGFloat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
+		F01FD5DD19627C0C0072BB0A /* TKitExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TKitExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		F01FD5E019627C0C0072BB0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		F01FD5E119627C0D0072BB0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		F01FD5E319627C0D0072BB0A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		F01FD5E619627C0D0072BB0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		F01FD5E819627C0D0072BB0A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -55,7 +71,14 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F01FD59D195BDB490072BB0A /* TKit.framework in Frameworks */,
+				F01FD5FD19627DC30072BB0A /* TKit.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F01FD5DA19627C0C0072BB0A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -65,6 +88,7 @@
 		F01FD587195BDB480072BB0A = {
 			isa = PBXGroup;
 			children = (
+				F01FD5DE19627C0C0072BB0A /* TKitExamples */,
 				F01FD593195BDB480072BB0A /* TKit */,
 				F01FD5A0195BDB490072BB0A /* TKitTests */,
 				F01FD592195BDB480072BB0A /* Products */,
@@ -76,6 +100,7 @@
 			children = (
 				F01FD591195BDB480072BB0A /* TKit.framework */,
 				F01FD59C195BDB490072BB0A /* TKitTests.xctest */,
+				F01FD5DD19627C0C0072BB0A /* TKitExamples.app */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -124,6 +149,26 @@
 			path = Extensions;
 			sourceTree = "<group>";
 		};
+		F01FD5DE19627C0C0072BB0A /* TKitExamples */ = {
+			isa = PBXGroup;
+			children = (
+				F01FD5E119627C0D0072BB0A /* AppDelegate.swift */,
+				F01FD5E319627C0D0072BB0A /* ViewController.swift */,
+				F01FD5E519627C0D0072BB0A /* Main.storyboard */,
+				F01FD5E819627C0D0072BB0A /* Images.xcassets */,
+				F01FD5DF19627C0C0072BB0A /* Supporting Files */,
+			);
+			path = TKitExamples;
+			sourceTree = "<group>";
+		};
+		F01FD5DF19627C0C0072BB0A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				F01FD5E019627C0C0072BB0A /* Info.plist */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXHeadersBuildPhase section */
@@ -167,13 +212,31 @@
 			buildRules = (
 			);
 			dependencies = (
-				F01FD59F195BDB490072BB0A /* PBXTargetDependency */,
-				F01FD5B5195BE2C90072BB0A /* PBXTargetDependency */,
+				F01FD5D1196275BC0072BB0A /* PBXTargetDependency */,
+				F01FD5D3196275BD0072BB0A /* PBXTargetDependency */,
+				F01FD5D5196275C00072BB0A /* PBXTargetDependency */,
 			);
 			name = TKitTests;
 			productName = TKitTests;
 			productReference = F01FD59C195BDB490072BB0A /* TKitTests.xctest */;
 			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		F01FD5DC19627C0C0072BB0A /* TKitExamples */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F01FD5F619627C0D0072BB0A /* Build configuration list for PBXNativeTarget "TKitExamples" */;
+			buildPhases = (
+				F01FD5D919627C0C0072BB0A /* Sources */,
+				F01FD5DA19627C0C0072BB0A /* Frameworks */,
+				F01FD5DB19627C0C0072BB0A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TKitExamples;
+			productName = TKitExamples;
+			productReference = F01FD5DD19627C0C0072BB0A /* TKitExamples.app */;
+			productType = "com.apple.product-type.application";
 		};
 /* End PBXNativeTarget section */
 
@@ -191,6 +254,9 @@
 						CreatedOnToolsVersion = 6.0;
 						TestTargetID = F01FD590195BDB480072BB0A;
 					};
+					F01FD5DC19627C0C0072BB0A = {
+						CreatedOnToolsVersion = 6.0;
+					};
 				};
 			};
 			buildConfigurationList = F01FD58B195BDB480072BB0A /* Build configuration list for PBXProject "TKit" */;
@@ -199,12 +265,14 @@
 			hasScannedForEncodings = 0;
 			knownRegions = (
 				en,
+				Base,
 			);
 			mainGroup = F01FD587195BDB480072BB0A;
 			productRefGroup = F01FD592195BDB480072BB0A /* Products */;
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
+				F01FD5DC19627C0C0072BB0A /* TKitExamples */,
 				F01FD590195BDB480072BB0A /* TKit */,
 				F01FD59B195BDB490072BB0A /* TKitTests */,
 			);
@@ -226,6 +294,15 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
+		F01FD5DB19627C0C0072BB0A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F01FD5E719627C0D0072BB0A /* Main.storyboard in Resources */,
+				F01FD5E919627C0D0072BB0A /* Images.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -242,25 +319,49 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F01FD5B3195BDF8B0072BB0A /* UIView.swift in Sources */,
 				F01FD5A4195BDB490072BB0A /* TKitTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F01FD5D919627C0C0072BB0A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F01FD5E419627C0D0072BB0A /* ViewController.swift in Sources */,
+				F01FD5E219627C0D0072BB0A /* AppDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		F01FD59F195BDB490072BB0A /* PBXTargetDependency */ = {
+		F01FD5D1196275BC0072BB0A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F01FD590195BDB480072BB0A /* TKit */;
-			targetProxy = F01FD59E195BDB490072BB0A /* PBXContainerItemProxy */;
+			targetProxy = F01FD5D0196275BC0072BB0A /* PBXContainerItemProxy */;
 		};
-		F01FD5B5195BE2C90072BB0A /* PBXTargetDependency */ = {
+		F01FD5D3196275BD0072BB0A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F01FD590195BDB480072BB0A /* TKit */;
-			targetProxy = F01FD5B4195BE2C90072BB0A /* PBXContainerItemProxy */;
+			targetProxy = F01FD5D2196275BD0072BB0A /* PBXContainerItemProxy */;
+		};
+		F01FD5D5196275C00072BB0A /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F01FD590195BDB480072BB0A /* TKit */;
+			targetProxy = F01FD5D4196275C00072BB0A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		F01FD5E519627C0D0072BB0A /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				F01FD5E619627C0D0072BB0A /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F01FD5A5195BDB490072BB0A /* Debug */ = {
@@ -413,6 +514,34 @@
 			};
 			name = Release;
 		};
+		F01FD5F719627C0D0072BB0A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				INFOPLIST_FILE = TKitExamples/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = YES;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Debug;
+		};
+		F01FD5F819627C0D0072BB0A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_LAUNCHIMAGE_NAME = LaunchImage;
+				INFOPLIST_FILE = TKitExamples/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
+				METAL_ENABLE_DEBUG_INFO = NO;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+			};
+			name = Release;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -439,6 +568,15 @@
 			buildConfigurations = (
 				F01FD5AB195BDB490072BB0A /* Debug */,
 				F01FD5AC195BDB490072BB0A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F01FD5F619627C0D0072BB0A /* Build configuration list for PBXNativeTarget "TKitExamples" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F01FD5F719627C0D0072BB0A /* Debug */,
+				F01FD5F819627C0D0072BB0A /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
