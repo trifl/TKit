@@ -16,6 +16,8 @@
 		F01FD5E719627C0D0072BB0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F01FD5E519627C0D0072BB0A /* Main.storyboard */; };
 		F01FD5E919627C0D0072BB0A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F01FD5E819627C0D0072BB0A /* Images.xcassets */; };
 		F01FD5FD19627DC30072BB0A /* TKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F01FD591195BDB480072BB0A /* TKit.framework */; };
+		F08C5AD81963BEBE008C301F /* TKTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08C5AD71963BEBE008C301F /* TKTimer.swift */; };
+		F08C5ADB1963CB31008C301F /* TKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F01FD591195BDB480072BB0A /* TKit.framework */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -57,6 +59,7 @@
 		F01FD5E319627C0D0072BB0A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F01FD5E619627C0D0072BB0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F01FD5E819627C0D0072BB0A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
+		F08C5AD71963BEBE008C301F /* TKTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TKTimer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -79,6 +82,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F08C5ADB1963CB31008C301F /* TKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -111,6 +115,7 @@
 				F01FD5B0195BDF6E0072BB0A /* Extensions */,
 				F01FD596195BDB490072BB0A /* TKit.h */,
 				F01FD594195BDB490072BB0A /* Supporting Files */,
+				F08C5AD71963BEBE008C301F /* TKTimer.swift */,
 			);
 			path = TKit;
 			sourceTree = "<group>";
@@ -310,6 +315,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F08C5AD81963BEBE008C301F /* TKTimer.swift in Sources */,
 				F01FD5CF19612F550072BB0A /* CGFloat.swift in Sources */,
 				F01FD5B2195BDF8B0072BB0A /* UIView.swift in Sources */,
 			);

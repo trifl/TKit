@@ -7,15 +7,28 @@
 //
 
 import UIKit
+import TKit
 
 @UIApplicationMain
 class AppDelegate: UIResponder, UIApplicationDelegate {
                             
     var window: UIWindow?
-
+    var timer = TKTimer(fps: 60.0)
 
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: NSDictionary?) -> Bool {
         // Override point for customization after application launch.
+        
+        timer.fire({(time: Double) in
+            println(time)
+            if (time < 2.0) {
+                println("no")
+                return false
+            } else {
+                println("yes")
+                return true
+            }
+        })
+        
         return true
     }
 

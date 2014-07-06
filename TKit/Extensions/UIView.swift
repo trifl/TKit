@@ -31,7 +31,7 @@ extension UIView {
                           }
     }
 */
-    
+
     // Frame shortcuts TODO: var
     func x() -> CGFloat { return frame.origin.x }
     func setX(x: CGFloat) { frame.origin.x = x }
