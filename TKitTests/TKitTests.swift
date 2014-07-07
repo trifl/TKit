@@ -11,8 +11,6 @@ import TKit
 import UIKit
 
 class TKitTests: XCTestCase {
-    
-    
     override func setUp() {
         super.setUp()
     }
@@ -21,7 +19,6 @@ class TKitTests: XCTestCase {
         super.tearDown()
     }
  
-    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measureBlock() {

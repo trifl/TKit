@@ -9,14 +9,14 @@
 /* Begin PBXBuildFile section */
 		F01FD597195BDB490072BB0A /* TKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F01FD596195BDB490072BB0A /* TKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F01FD5A4195BDB490072BB0A /* TKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01FD5A3195BDB490072BB0A /* TKitTests.swift */; };
-		F01FD5B2195BDF8B0072BB0A /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01FD5B1195BDF8B0072BB0A /* UIView.swift */; };
-		F01FD5CF19612F550072BB0A /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01FD5CE19612F550072BB0A /* CGFloat.swift */; };
 		F01FD5E219627C0D0072BB0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01FD5E119627C0D0072BB0A /* AppDelegate.swift */; };
 		F01FD5E419627C0D0072BB0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01FD5E319627C0D0072BB0A /* ViewController.swift */; };
 		F01FD5E719627C0D0072BB0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F01FD5E519627C0D0072BB0A /* Main.storyboard */; };
 		F01FD5E919627C0D0072BB0A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F01FD5E819627C0D0072BB0A /* Images.xcassets */; };
 		F01FD5FD19627DC30072BB0A /* TKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F01FD591195BDB480072BB0A /* TKit.framework */; };
-		F08C5AD81963BEBE008C301F /* TKTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F08C5AD71963BEBE008C301F /* TKTimer.swift */; };
+		F02C38BC196A50870029AEE4 /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02C38B7196A50870029AEE4 /* CGFloat.swift */; };
+		F02C38BE196A50870029AEE4 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02C38B9196A50870029AEE4 /* UIView.swift */; };
+		F02C38C2196A50CC0029AEE4 /* TKTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02C38C1196A50CC0029AEE4 /* TKTimer.swift */; };
 		F08C5ADB1963CB31008C301F /* TKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F01FD591195BDB480072BB0A /* TKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -51,15 +51,15 @@
 		F01FD59C195BDB490072BB0A /* TKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		F01FD5A2195BDB490072BB0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F01FD5A3195BDB490072BB0A /* TKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TKitTests.swift; sourceTree = "<group>"; };
-		F01FD5B1195BDF8B0072BB0A /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
-		F01FD5CE19612F550072BB0A /* CGFloat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
 		F01FD5DD19627C0C0072BB0A /* TKitExamples.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TKitExamples.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		F01FD5E019627C0C0072BB0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F01FD5E119627C0D0072BB0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F01FD5E319627C0D0072BB0A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F01FD5E619627C0D0072BB0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F01FD5E819627C0D0072BB0A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		F08C5AD71963BEBE008C301F /* TKTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TKTimer.swift; sourceTree = "<group>"; };
+		F02C38B7196A50870029AEE4 /* CGFloat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
+		F02C38B9196A50870029AEE4 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		F02C38C1196A50CC0029AEE4 /* TKTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TKTimer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -112,10 +112,10 @@
 		F01FD593195BDB480072BB0A /* TKit */ = {
 			isa = PBXGroup;
 			children = (
-				F01FD5B0195BDF6E0072BB0A /* Extensions */,
 				F01FD596195BDB490072BB0A /* TKit.h */,
+				F02C38C0196A50CC0029AEE4 /* Utilities */,
+				F02C38B6196A50870029AEE4 /* Extensions */,
 				F01FD594195BDB490072BB0A /* Supporting Files */,
-				F08C5AD71963BEBE008C301F /* TKTimer.swift */,
 			);
 			path = TKit;
 			sourceTree = "<group>";
@@ -145,15 +145,6 @@
 			name = "Supporting Files";
 			sourceTree = "<group>";
 		};
-		F01FD5B0195BDF6E0072BB0A /* Extensions */ = {
-			isa = PBXGroup;
-			children = (
-				F01FD5CE19612F550072BB0A /* CGFloat.swift */,
-				F01FD5B1195BDF8B0072BB0A /* UIView.swift */,
-			);
-			path = Extensions;
-			sourceTree = "<group>";
-		};
 		F01FD5DE19627C0C0072BB0A /* TKitExamples */ = {
 			isa = PBXGroup;
 			children = (
@@ -172,6 +163,23 @@
 				F01FD5E019627C0C0072BB0A /* Info.plist */,
 			);
 			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		F02C38B6196A50870029AEE4 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				F02C38B7196A50870029AEE4 /* CGFloat.swift */,
+				F02C38B9196A50870029AEE4 /* UIView.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		F02C38C0196A50CC0029AEE4 /* Utilities */ = {
+			isa = PBXGroup;
+			children = (
+				F02C38C1196A50CC0029AEE4 /* TKTimer.swift */,
+			);
+			path = Utilities;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -315,9 +323,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F08C5AD81963BEBE008C301F /* TKTimer.swift in Sources */,
-				F01FD5CF19612F550072BB0A /* CGFloat.swift in Sources */,
-				F01FD5B2195BDF8B0072BB0A /* UIView.swift in Sources */,
+				F02C38BE196A50870029AEE4 /* UIView.swift in Sources */,
+				F02C38C2196A50CC0029AEE4 /* TKTimer.swift in Sources */,
+				F02C38BC196A50870029AEE4 /* CGFloat.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -409,6 +417,8 @@
 				METAL_ENABLE_DEBUG_INFO = YES;
 				ONLY_ACTIVE_ARCH = YES;
 				SDKROOT = iphoneos;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VERSIONING_SYSTEM = "apple-generic";
@@ -448,6 +458,8 @@
 				IPHONEOS_DEPLOYMENT_TARGET = 8.0;
 				METAL_ENABLE_DEBUG_INFO = NO;
 				SDKROOT = iphoneos;
+				SWIFT_INSTALL_OBJC_HEADER = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				TARGETED_DEVICE_FAMILY = "1,2";
 				VALIDATE_PRODUCT = YES;
 				VERSIONING_SYSTEM = "apple-generic";
@@ -468,6 +480,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 			};
 			name = Debug;
@@ -485,6 +498,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};
@@ -503,6 +517,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				METAL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Debug;
 		};
@@ -517,6 +532,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
 				METAL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};
@@ -533,6 +549,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				METAL_ENABLE_DEBUG_INFO = YES;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Debug;
 		};
@@ -545,6 +562,7 @@
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				METAL_ENABLE_DEBUG_INFO = NO;
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_OBJC_BRIDGING_HEADER = "";
 			};
 			name = Release;
 		};
