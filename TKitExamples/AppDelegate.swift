@@ -21,13 +21,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         timer.fire({(time: Double) in
             println(time)
             if (time < 2.0) {
-                println("no")
-                return false
-            } else {
                 println("yes")
                 return true
+            } else {
+                println("no")
+                return false
             }
         })
+        
+//        var i = 1
+//        timer.fire({(time: Double) in
+//            println(time)
+//            return true
+//            }, duration: 3.0)
         
         return true
     }
