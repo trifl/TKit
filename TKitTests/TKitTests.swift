@@ -11,11 +11,15 @@ import TKit
 import UIKit
 
 class TKitTests: XCTestCase {
+    var view = UIView()
+    
     override func setUp() {
         super.setUp()
     }
     
     override func tearDown() {
+        view.x = 20
+        println(view.x)
         super.tearDown()
     }
  
