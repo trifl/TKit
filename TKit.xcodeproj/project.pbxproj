@@ -17,7 +17,8 @@
 		F02C38BC196A50870029AEE4 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02C38B7196A50870029AEE4 /* Double.swift */; };
 		F02C38BE196A50870029AEE4 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02C38B9196A50870029AEE4 /* UIView.swift */; };
 		F02C38C2196A50CC0029AEE4 /* TKTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02C38C1196A50CC0029AEE4 /* TKTimer.swift */; };
-		F032F911196B71B500EF4269 /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F032F910196B71B500EF4269 /* CGFloat.swift */; };
+		F032F911196B71B500EF4269 /* Float.swift in Sources */ = {isa = PBXBuildFile; fileRef = F032F910196B71B500EF4269 /* Float.swift */; };
+		F032F913196B72BC00EF4269 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F032F912196B72BC00EF4269 /* String.swift */; };
 		F08C5ADB1963CB31008C301F /* TKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F01FD591195BDB480072BB0A /* TKit.framework */; };
 /* End PBXBuildFile section */
 
@@ -61,7 +62,8 @@
 		F02C38B7196A50870029AEE4 /* Double.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		F02C38B9196A50870029AEE4 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		F02C38C1196A50CC0029AEE4 /* TKTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TKTimer.swift; sourceTree = "<group>"; };
-		F032F910196B71B500EF4269 /* CGFloat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
+		F032F910196B71B500EF4269 /* Float.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Float.swift; sourceTree = "<group>"; };
+		F032F912196B72BC00EF4269 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -171,8 +173,9 @@
 			isa = PBXGroup;
 			children = (
 				F02C38B7196A50870029AEE4 /* Double.swift */,
-				F032F910196B71B500EF4269 /* CGFloat.swift */,
+				F032F910196B71B500EF4269 /* Float.swift */,
 				F02C38B9196A50870029AEE4 /* UIView.swift */,
+				F032F912196B72BC00EF4269 /* String.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -326,8 +329,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F032F911196B71B500EF4269 /* CGFloat.swift in Sources */,
+				F032F911196B71B500EF4269 /* Float.swift in Sources */,
 				F02C38BE196A50870029AEE4 /* UIView.swift in Sources */,
+				F032F913196B72BC00EF4269 /* String.swift in Sources */,
 				F02C38C2196A50CC0029AEE4 /* TKTimer.swift in Sources */,
 				F02C38BC196A50870029AEE4 /* Double.swift in Sources */,
 			);
