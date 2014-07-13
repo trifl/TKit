@@ -10,8 +10,6 @@ import UIKit
 import Foundation
 
 extension UIView {
-
-    //Uncomment when compiler is fixed
     var x: CGFloat { get { return frame.origin.x } set(x) { frame.origin.x = x } }
     var y: CGFloat { get { return frame.origin.y } set(y) { frame.origin.y = y } }
     var width: CGFloat { get { return bounds.size.width } set(width) { bounds.size.width = width } }
