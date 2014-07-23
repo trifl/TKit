@@ -14,12 +14,12 @@
 		F01FD5E719627C0D0072BB0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F01FD5E519627C0D0072BB0A /* Main.storyboard */; };
 		F01FD5E919627C0D0072BB0A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F01FD5E819627C0D0072BB0A /* Images.xcassets */; };
 		F01FD5FD19627DC30072BB0A /* TKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F01FD591195BDB480072BB0A /* TKit.framework */; };
-		F02C38BC196A50870029AEE4 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02C38B7196A50870029AEE4 /* Double.swift */; };
 		F02C38BE196A50870029AEE4 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02C38B9196A50870029AEE4 /* UIView.swift */; };
 		F02C38C2196A50CC0029AEE4 /* TKTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02C38C1196A50CC0029AEE4 /* TKTimer.swift */; };
-		F032F911196B71B500EF4269 /* Float.swift in Sources */ = {isa = PBXBuildFile; fileRef = F032F910196B71B500EF4269 /* Float.swift */; };
+		F032F911196B71B500EF4269 /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F032F910196B71B500EF4269 /* CGFloat.swift */; };
 		F032F913196B72BC00EF4269 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F032F912196B72BC00EF4269 /* String.swift */; };
 		F08C5ADB1963CB31008C301F /* TKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F01FD591195BDB480072BB0A /* TKit.framework */; };
+		F0AD1A30197361BD00EFD069 /* TKModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AD1A2F197361BD00EFD069 /* TKModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -59,11 +59,11 @@
 		F01FD5E319627C0D0072BB0A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
 		F01FD5E619627C0D0072BB0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F01FD5E819627C0D0072BB0A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
-		F02C38B7196A50870029AEE4 /* Double.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		F02C38B9196A50870029AEE4 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		F02C38C1196A50CC0029AEE4 /* TKTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TKTimer.swift; sourceTree = "<group>"; };
-		F032F910196B71B500EF4269 /* Float.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Float.swift; sourceTree = "<group>"; };
+		F032F910196B71B500EF4269 /* CGFloat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
 		F032F912196B72BC00EF4269 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		F0AD1A2F197361BD00EFD069 /* TKModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TKModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -116,6 +116,7 @@
 		F01FD593195BDB480072BB0A /* TKit */ = {
 			isa = PBXGroup;
 			children = (
+				F0AD1A2E1973617400EFD069 /* TKModel */,
 				F01FD596195BDB490072BB0A /* TKit.h */,
 				F02C38C0196A50CC0029AEE4 /* Utilities */,
 				F02C38B6196A50870029AEE4 /* Extensions */,
@@ -172,8 +173,7 @@
 		F02C38B6196A50870029AEE4 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				F02C38B7196A50870029AEE4 /* Double.swift */,
-				F032F910196B71B500EF4269 /* Float.swift */,
+				F032F910196B71B500EF4269 /* CGFloat.swift */,
 				F02C38B9196A50870029AEE4 /* UIView.swift */,
 				F032F912196B72BC00EF4269 /* String.swift */,
 			);
@@ -186,6 +186,14 @@
 				F02C38C1196A50CC0029AEE4 /* TKTimer.swift */,
 			);
 			path = Utilities;
+			sourceTree = "<group>";
+		};
+		F0AD1A2E1973617400EFD069 /* TKModel */ = {
+			isa = PBXGroup;
+			children = (
+				F0AD1A2F197361BD00EFD069 /* TKModel.swift */,
+			);
+			path = TKModel;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -329,11 +337,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F032F911196B71B500EF4269 /* Float.swift in Sources */,
+				F0AD1A30197361BD00EFD069 /* TKModel.swift in Sources */,
+				F032F911196B71B500EF4269 /* CGFloat.swift in Sources */,
 				F02C38BE196A50870029AEE4 /* UIView.swift in Sources */,
 				F032F913196B72BC00EF4269 /* String.swift in Sources */,
 				F02C38C2196A50CC0029AEE4 /* TKTimer.swift in Sources */,
-				F02C38BC196A50870029AEE4 /* Double.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
