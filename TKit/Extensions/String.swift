@@ -10,6 +10,6 @@ import Foundation
 
 extension String {
     
-    var length: Int { return countElements(self) }
+    public var length: Int { return countElements(self) }
     
 }
