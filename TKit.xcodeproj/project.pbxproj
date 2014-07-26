@@ -7,22 +7,30 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		F01C5AA61983539F00C61A53 /* TKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F01FD591195BDB480072BB0A /* TKit.framework */; };
+		F01C5AA71983539F00C61A53 /* TKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F01FD591195BDB480072BB0A /* TKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
+		F01C5AAD19835D1D00C61A53 /* TKTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01C5AAC19835D1D00C61A53 /* TKTimerViewController.swift */; };
 		F01FD597195BDB490072BB0A /* TKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F01FD596195BDB490072BB0A /* TKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F01FD5A4195BDB490072BB0A /* TKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01FD5A3195BDB490072BB0A /* TKitTests.swift */; };
 		F01FD5E219627C0D0072BB0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01FD5E119627C0D0072BB0A /* AppDelegate.swift */; };
 		F01FD5E419627C0D0072BB0A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01FD5E319627C0D0072BB0A /* ViewController.swift */; };
-		F01FD5E719627C0D0072BB0A /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = F01FD5E519627C0D0072BB0A /* Main.storyboard */; };
 		F01FD5E919627C0D0072BB0A /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F01FD5E819627C0D0072BB0A /* Images.xcassets */; };
 		F01FD5FD19627DC30072BB0A /* TKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F01FD591195BDB480072BB0A /* TKit.framework */; };
 		F02C38BE196A50870029AEE4 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02C38B9196A50870029AEE4 /* UIView.swift */; };
 		F02C38C2196A50CC0029AEE4 /* TKTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02C38C1196A50CC0029AEE4 /* TKTimer.swift */; };
-		F032F911196B71B500EF4269 /* CGFloat.swift in Sources */ = {isa = PBXBuildFile; fileRef = F032F910196B71B500EF4269 /* CGFloat.swift */; };
+		F032F911196B71B500EF4269 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = F032F910196B71B500EF4269 /* Double.swift */; };
 		F032F913196B72BC00EF4269 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F032F912196B72BC00EF4269 /* String.swift */; };
-		F08C5ADB1963CB31008C301F /* TKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = F01FD591195BDB480072BB0A /* TKit.framework */; };
 		F0AD1A30197361BD00EFD069 /* TKModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AD1A2F197361BD00EFD069 /* TKModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
+		F01C5AA81983539F00C61A53 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F01FD588195BDB480072BB0A /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F01FD590195BDB480072BB0A;
+			remoteInfo = TKit;
+		};
 		F01FD5D0196275BC0072BB0A /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = F01FD588195BDB480072BB0A /* Project object */;
@@ -46,7 +54,22 @@
 		};
 /* End PBXContainerItemProxy section */
 
+/* Begin PBXCopyFilesBuildPhase section */
+		F01C5AAA198353A000C61A53 /* Embed Frameworks */ = {
+			isa = PBXCopyFilesBuildPhase;
+			buildActionMask = 2147483647;
+			dstPath = "";
+			dstSubfolderSpec = 10;
+			files = (
+				F01C5AA71983539F00C61A53 /* TKit.framework in Embed Frameworks */,
+			);
+			name = "Embed Frameworks";
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXCopyFilesBuildPhase section */
+
 /* Begin PBXFileReference section */
+		F01C5AAC19835D1D00C61A53 /* TKTimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TKTimerViewController.swift; sourceTree = "<group>"; };
 		F01FD591195BDB480072BB0A /* TKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F01FD595195BDB490072BB0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F01FD596195BDB490072BB0A /* TKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKit.h; sourceTree = "<group>"; };
@@ -57,11 +80,10 @@
 		F01FD5E019627C0C0072BB0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F01FD5E119627C0D0072BB0A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		F01FD5E319627C0D0072BB0A /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
-		F01FD5E619627C0D0072BB0A /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
 		F01FD5E819627C0D0072BB0A /* Images.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Images.xcassets; sourceTree = "<group>"; };
 		F02C38B9196A50870029AEE4 /* UIView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 		F02C38C1196A50CC0029AEE4 /* TKTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TKTimer.swift; sourceTree = "<group>"; };
-		F032F910196B71B500EF4269 /* CGFloat.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGFloat.swift; sourceTree = "<group>"; };
+		F032F910196B71B500EF4269 /* Double.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		F032F912196B72BC00EF4269 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
 		F0AD1A2F197361BD00EFD069 /* TKModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TKModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -86,13 +108,21 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F08C5ADB1963CB31008C301F /* TKit.framework in Frameworks */,
+				F01C5AA61983539F00C61A53 /* TKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		F01C5AAB1983541800C61A53 /* TKTimer */ = {
+			isa = PBXGroup;
+			children = (
+				F01C5AAC19835D1D00C61A53 /* TKTimerViewController.swift */,
+			);
+			name = TKTimer;
+			sourceTree = "<group>";
+		};
 		F01FD587195BDB480072BB0A = {
 			isa = PBXGroup;
 			children = (
@@ -153,9 +183,9 @@
 		F01FD5DE19627C0C0072BB0A /* TKitExamples */ = {
 			isa = PBXGroup;
 			children = (
+				F01C5AAB1983541800C61A53 /* TKTimer */,
 				F01FD5E119627C0D0072BB0A /* AppDelegate.swift */,
 				F01FD5E319627C0D0072BB0A /* ViewController.swift */,
-				F01FD5E519627C0D0072BB0A /* Main.storyboard */,
 				F01FD5E819627C0D0072BB0A /* Images.xcassets */,
 				F01FD5DF19627C0C0072BB0A /* Supporting Files */,
 			);
@@ -173,7 +203,7 @@
 		F02C38B6196A50870029AEE4 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				F032F910196B71B500EF4269 /* CGFloat.swift */,
+				F032F910196B71B500EF4269 /* Double.swift */,
 				F02C38B9196A50870029AEE4 /* UIView.swift */,
 				F032F912196B72BC00EF4269 /* String.swift */,
 			);
@@ -255,10 +285,12 @@
 				F01FD5D919627C0C0072BB0A /* Sources */,
 				F01FD5DA19627C0C0072BB0A /* Frameworks */,
 				F01FD5DB19627C0C0072BB0A /* Resources */,
+				F01C5AAA198353A000C61A53 /* Embed Frameworks */,
 			);
 			buildRules = (
 			);
 			dependencies = (
+				F01C5AA91983539F00C61A53 /* PBXTargetDependency */,
 			);
 			name = TKitExamples;
 			productName = TKitExamples;
@@ -325,7 +357,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				F01FD5E719627C0D0072BB0A /* Main.storyboard in Resources */,
 				F01FD5E919627C0D0072BB0A /* Images.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -338,7 +369,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				F0AD1A30197361BD00EFD069 /* TKModel.swift in Sources */,
-				F032F911196B71B500EF4269 /* CGFloat.swift in Sources */,
+				F032F911196B71B500EF4269 /* Double.swift in Sources */,
 				F02C38BE196A50870029AEE4 /* UIView.swift in Sources */,
 				F032F913196B72BC00EF4269 /* String.swift in Sources */,
 				F02C38C2196A50CC0029AEE4 /* TKTimer.swift in Sources */,
@@ -359,12 +390,18 @@
 			files = (
 				F01FD5E419627C0D0072BB0A /* ViewController.swift in Sources */,
 				F01FD5E219627C0D0072BB0A /* AppDelegate.swift in Sources */,
+				F01C5AAD19835D1D00C61A53 /* TKTimerViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
+		F01C5AA91983539F00C61A53 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F01FD590195BDB480072BB0A /* TKit */;
+			targetProxy = F01C5AA81983539F00C61A53 /* PBXContainerItemProxy */;
+		};
 		F01FD5D1196275BC0072BB0A /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = F01FD590195BDB480072BB0A /* TKit */;
@@ -381,17 +418,6 @@
 			targetProxy = F01FD5D4196275C00072BB0A /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
-
-/* Begin PBXVariantGroup section */
-		F01FD5E519627C0D0072BB0A /* Main.storyboard */ = {
-			isa = PBXVariantGroup;
-			children = (
-				F01FD5E619627C0D0072BB0A /* Base */,
-			);
-			name = Main.storyboard;
-			sourceTree = "<group>";
-		};
-/* End PBXVariantGroup section */
 
 /* Begin XCBuildConfiguration section */
 		F01FD5A5195BDB490072BB0A /* Debug */ = {

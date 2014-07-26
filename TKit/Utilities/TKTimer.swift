@@ -8,25 +8,26 @@
 
 import Foundation
 
-class TKTimer {
-    var fps = 60.0
+public class TKTimer {
     
-    var _timer = NSTimer()
-    var _initialDate: NSDate?
-    var _timeFunction: ((Double) -> Bool)?
-    var _duration = 0.0
-    var _usesDuration = false
+    public var fps = 60.0
     
-    init(fps: Double) {
+    private var _initialDate: NSDate?
+    private var _timer = NSTimer()
+    private var _timeFunction: ((Double) -> Bool)?
+    private var _duration = 0.0
+    private var _usesDuration = false
+    
+    public init(fps: Double) {
         self.fps = fps
     }
     
-    func fire(function:(time: Double) -> Bool) {
+    public func fire(function:(time: Double) -> Bool) {
         fire(function, duration: 0)
         _usesDuration = false
     }
     
-    func fire(function:(time: Double) -> Bool, duration: NSTimeInterval) {
+    public func fire(function:(time: Double) -> Bool, duration: NSTimeInterval) {
         _invalidate()
         _timeFunction = function
         _initialDate = NSDate()
@@ -40,14 +41,14 @@ class TKTimer {
         )
     }
     
-    func _invalidate() {
+    private func _invalidate() {
         _timer.invalidate()
         _duration = 0.0
         _usesDuration = true
         _initialDate = nil;
     }
     
-    @objc func _fireTimeFunction() {
+    @objc private func _fireTimeFunction() {
         if var timeFunction = _timeFunction {
             var time = NSDate().timeIntervalSinceDate(_initialDate)
             // This makes sure it always ends at _duration where you are intending it to end, unless

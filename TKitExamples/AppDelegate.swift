@@ -14,10 +14,23 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                             
     var window: UIWindow?
     var timer = TKTimer(fps: 60.0)
-
+    var navigationController: UINavigationController?
+    
     func application(application: UIApplication, didFinishLaunchingWithOptions launchOptions: NSDictionary?) -> Bool {
-        // Override point for customization after application launch.
         
+        var viewController = ViewController()
+        
+        navigationController = UINavigationController(rootViewController: viewController)
+        
+        window = UIWindow(frame: UIScreen.mainScreen().bounds)
+        window!.rootViewController = navigationController
+        window!.makeKeyAndVisible()
+        
+        return true
+        
+        // Override point for customization after application launch.
+       
+        /*
         timer.fire({(time: Double) in
             println(time)
             if (time < 2.0) {
@@ -28,15 +41,14 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
                 return false
             }
         })
+*/
         
 //        var i = 1
 //        timer.fire({(time: Double) in
 //            println(time)
 //            return true
 //            }, duration: 3.0)
-        
-        return true
-    }
+}
 
     func applicationWillResignActive(application: UIApplication) {
         // Sent when the application is about to move from active to inactive state. This can occur for certain types of temporary interruptions (such as an incoming phone call or SMS message) or when the user quits the application and it begins the transition to the background state.

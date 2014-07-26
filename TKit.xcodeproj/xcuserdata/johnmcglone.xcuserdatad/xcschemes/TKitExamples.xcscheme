@@ -14,6 +14,20 @@
             buildForAnalyzing = "YES">
             <BuildableReference
                BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F01FD590195BDB480072BB0A"
+               BuildableName = "TKit.framework"
+               BlueprintName = "TKit"
+               ReferencedContainer = "container:TKit.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
                BlueprintIdentifier = "F01FD5DC19627C0C0072BB0A"
                BuildableName = "TKitExamples.app"
                BlueprintName = "TKitExamples"
