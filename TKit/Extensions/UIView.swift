@@ -10,6 +10,11 @@ import UIKit
 import Foundation
 
 extension UIView {
+    // TODO: determine if we need to setNeedsLayout or not. If not, do we really even need these extensions?
+    // ...decisions.
+    public var origin: CGPoint { get { return frame.origin } set(origin) { frame.origin = origin} }
+    public var size: CGSize { get { return frame.size } set(size) { frame.size = size} }
+
     public var x: CGFloat { get { return frame.origin.x } set(x) { frame.origin.x = x } }
     public var y: CGFloat { get { return frame.origin.y } set(y) { frame.origin.y = y } }
     public var width: CGFloat { get { return bounds.size.width } set(width) { bounds.size.width = width } }
