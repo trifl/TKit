@@ -28,7 +28,7 @@ public class TKTimer {
     }
     
     public func fire(function:(time: Double) -> Bool, duration: NSTimeInterval) {
-        _invalidate()
+        invalidate()
         _timeFunction = function
         _initialDate = NSDate()
         _duration = duration
@@ -41,7 +41,7 @@ public class TKTimer {
         )
     }
     
-    private func _invalidate() {
+    public func invalidate() {
         _timer.invalidate()
         _duration = 0.0
         _usesDuration = true
@@ -59,7 +59,7 @@ public class TKTimer {
             
             var stop = !timeFunction(time)
             if stop || (_usesDuration && time == _duration) {
-                _invalidate()
+                invalidate()
             }
         }
     }
