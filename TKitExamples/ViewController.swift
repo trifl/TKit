@@ -8,14 +8,14 @@
 
 import UIKit
 
-private let _tktimer = "TKTimer"
-private let _tktest = "TKTest"
-
 class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSource {
     
     var tableView = UITableView()
     
-    let tests = [["name":"TKTimer", "class":"TKTimerViewController", "type":_tktimer]] as NSArray
+    let tests = [["name":"TKTimer", "class":"TKTimerViewController"]] as NSArray
+    let classes : Dictionary<String, ()->UIViewController> = [
+        "TKTimerViewController" : { return TKTimerViewController() }
+    ]
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -24,16 +24,6 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         setupTableView()
         
         tableView.reloadData()
-    }
-    
-    func go(type: String) {
-        if (type == _tktimer) { goTKTimer() }
-        else if (type == _tktest) { goTKTimer() }
-    }
-    
-    func goTKTimer() {
-        var tkTimerViewController = TKTimerViewController()
-        self.navigationController.pushViewController(tkTimerViewController, animated: true)
     }
 
     func setupTableView() {
@@ -62,10 +52,18 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
     }
     
+    func controllerFromName(className: String) -> UIViewController {
+        if (className == "TKTimerViewController") { return TKTimerViewController() }
+        return UIViewController()
+    }
+    
     // MARK: UITableViewDelegate
     func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
-        var type = tests[indexPath.row]!["type"] as String
-        go(type)
+        var className = tests[indexPath.row]!["class"] as String
+        // TODO: why isn't this working?
+        // var viewController: UIViewController = classes[className] as UIViewController
+        var viewController = controllerFromName(className)
+        self.navigationController.pushViewController(viewController, animated: true)
     }
 }
 

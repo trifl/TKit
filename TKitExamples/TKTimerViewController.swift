@@ -13,8 +13,8 @@ class TKTimerViewController: UIViewController {
     var timer = TKTimer(fps: 30.0)
     var start = 100.0
     
-    var fpsTextField = UITextField()
-    var durationTextField = UITextField()
+    var fpsTextField = TKTextField()
+    var durationTextField = TKTextField()
     
     var counterLabel = UILabel()
     var goButton = UIButton.buttonWithType(UIButtonType.Custom) as UIButton
@@ -35,7 +35,10 @@ class TKTimerViewController: UIViewController {
         setupCounterLabel()
         
         setupGoButton()
+        
+        var t = UITextField()
     }
+    
     
     override func viewDidLayoutSubviews() {
         super.viewDidLayoutSubviews()
@@ -66,10 +69,9 @@ class TKTimerViewController: UIViewController {
     }
     
     // MARK: - textFields
-    func styleTextField(textField:UITextField) {
-        textField.layer.borderColor = UIColor.blackColor().CGColor
+    func styleTextField(textField:TKTextField) {
+        textField.backgroundColor = UIColor(white: 0.0, alpha: 0.05)
         textField.keyboardType = UIKeyboardType.NumberPad
-        textField.layer.borderWidth = 2
         textField.textColor = UIColor.blackColor()
     }
     
