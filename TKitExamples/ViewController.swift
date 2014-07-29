@@ -52,17 +52,10 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
         return cell
     }
     
-    func controllerFromName(className: String) -> UIViewController {
-        if (className == "TKTimerViewController") { return TKTimerViewController() }
-        return UIViewController()
-    }
-    
     // MARK: UITableViewDelegate
     func tableView(tableView: UITableView!, didSelectRowAtIndexPath indexPath: NSIndexPath!) {
         var className = tests[indexPath.row]!["class"] as String
-        // TODO: why isn't this working?
-        // var viewController: UIViewController = classes[className] as UIViewController
-        var viewController = controllerFromName(className)
+        var viewController = classes[className]!()
         self.navigationController.pushViewController(viewController, animated: true)
     }
 }
