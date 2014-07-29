@@ -105,17 +105,11 @@ class TKTimerViewController: UIViewController {
         
         timer.fire({(time: Double) in
             var ratio = time / duration;
-            var cont = true
             var value = self.start - self.start * ratio
-            NSLog("%f, %f, %f", ratio, time, value)
-            
-            if (value <= 0) {
-                value = 0
-                cont = false
-            }
             self.counterLabel.text = NSString(format: "%f", value)
             self.view.setNeedsLayout()
-            return cont
+            
+            return true
             }, duration: duration)
     }
     
