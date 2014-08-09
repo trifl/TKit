@@ -11,7 +11,8 @@
 		F01C5AA71983539F00C61A53 /* TKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = F01FD591195BDB480072BB0A /* TKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, ); }; };
 		F01C5AAD19835D1D00C61A53 /* TKTimerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01C5AAC19835D1D00C61A53 /* TKTimerViewController.swift */; };
 		F01C5AB01986087200C61A53 /* TKTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01C5AAF1986087200C61A53 /* TKTextField.swift */; };
-		F01FBE1C1995B1FE009784EA /* TKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01FBE1B1995B1FE009784EA /* TKit.swift */; };
+		F01FBE1E1995EB94009784EA /* NSTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01FBE1D1995EB94009784EA /* NSTimer.swift */; };
+		F01FBE241995F17B009784EA /* TKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01FBE231995F17A009784EA /* TKit.swift */; };
 		F01FD597195BDB490072BB0A /* TKit.h in Headers */ = {isa = PBXBuildFile; fileRef = F01FD596195BDB490072BB0A /* TKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
 		F01FD5A4195BDB490072BB0A /* TKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01FD5A3195BDB490072BB0A /* TKitTests.swift */; };
 		F01FD5E219627C0D0072BB0A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = F01FD5E119627C0D0072BB0A /* AppDelegate.swift */; };
@@ -73,7 +74,8 @@
 /* Begin PBXFileReference section */
 		F01C5AAC19835D1D00C61A53 /* TKTimerViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TKTimerViewController.swift; sourceTree = "<group>"; };
 		F01C5AAF1986087200C61A53 /* TKTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TKTextField.swift; sourceTree = "<group>"; };
-		F01FBE1B1995B1FE009784EA /* TKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TKit.swift; sourceTree = "<group>"; };
+		F01FBE1D1995EB94009784EA /* NSTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = NSTimer.swift; sourceTree = "<group>"; };
+		F01FBE231995F17A009784EA /* TKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TKit.swift; sourceTree = "<group>"; };
 		F01FD591195BDB480072BB0A /* TKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		F01FD595195BDB490072BB0A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		F01FD596195BDB490072BB0A /* TKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKit.h; sourceTree = "<group>"; };
@@ -158,9 +160,10 @@
 		F01FD593195BDB480072BB0A /* TKit */ = {
 			isa = PBXGroup;
 			children = (
+				F01FD596195BDB490072BB0A /* TKit.h */,
+				F01FBE231995F17A009784EA /* TKit.swift */,
 				F01C5AAE1986086700C61A53 /* TKViews */,
 				F0AD1A2E1973617400EFD069 /* TKModel */,
-				F01FD596195BDB490072BB0A /* TKit.h */,
 				F02C38C0196A50CC0029AEE4 /* Utilities */,
 				F02C38B6196A50870029AEE4 /* Extensions */,
 				F01FD594195BDB490072BB0A /* Supporting Files */,
@@ -219,6 +222,7 @@
 				F032F910196B71B500EF4269 /* Double.swift */,
 				F02C38B9196A50870029AEE4 /* UIView.swift */,
 				F032F912196B72BC00EF4269 /* String.swift */,
+				F01FBE1D1995EB94009784EA /* NSTimer.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -227,7 +231,6 @@
 			isa = PBXGroup;
 			children = (
 				F02C38C1196A50CC0029AEE4 /* TKTimer.swift */,
-				F01FBE1B1995B1FE009784EA /* TKit.swift */,
 			);
 			path = Utilities;
 			sourceTree = "<group>";
@@ -383,10 +386,11 @@
 			buildActionMask = 2147483647;
 			files = (
 				F01C5AB01986087200C61A53 /* TKTextField.swift in Sources */,
-				F01FBE1C1995B1FE009784EA /* TKit.swift in Sources */,
+				F01FBE1E1995EB94009784EA /* NSTimer.swift in Sources */,
 				F0AD1A30197361BD00EFD069 /* TKModel.swift in Sources */,
 				F032F911196B71B500EF4269 /* Double.swift in Sources */,
 				F02C38BE196A50870029AEE4 /* UIView.swift in Sources */,
+				F01FBE241995F17B009784EA /* TKit.swift in Sources */,
 				F032F913196B72BC00EF4269 /* String.swift in Sources */,
 				F02C38C2196A50CC0029AEE4 /* TKTimer.swift in Sources */,
 			);
