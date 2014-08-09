@@ -8,7 +8,7 @@
 
 import Foundation
 
-extension CGFloat {
+public extension CGFloat {
     // common 
     public var thrice: CGFloat { return self * 3.0 }
     public var twice: CGFloat { return self * 2.0 }

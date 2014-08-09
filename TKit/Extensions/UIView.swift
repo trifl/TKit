@@ -9,7 +9,7 @@
 import UIKit
 import Foundation
 
-extension UIView {
+public extension UIView {
     // TODO: determine if we need to setNeedsLayout or not. If not, do we really even need these extensions?
     // ...decisions.
     public var origin: CGPoint { get { return frame.origin } set(origin) { frame.origin = origin} }
@@ -35,10 +35,10 @@ extension UIView {
 
     // Simple layout chaining
     public func snapCenterX(x: CGFloat) -> UIView { center.x = x; return self }
-    public func snapCenterX() -> UIView { snapCenterX(superview.height.half); return self }
+    public func snapCenterX() -> UIView { snapCenterX(superview?.height.half ?? center.x); return self }
     
     public func snapCenterY(y: CGFloat) -> UIView { center.y = y; return self }
-    public func snapCenterY() -> UIView { snapCenterY(superview.height.half); return self }
+    public func snapCenterY() -> UIView { snapCenterY(superview?.height.half ?? center.y); return self }
     
     public func snapCenter(center: CGPoint) -> UIView { self.center = center; return self }
     public func snapCenter() -> UIView { snapCenterX(); snapCenterY(); return self }
@@ -47,10 +47,10 @@ extension UIView {
     public func snapTop() -> UIView { snapTop(0); return self }
 
     public func snapRight(right: CGFloat) -> UIView { left = right; return self }
-    public func snapRight() -> UIView { snapLeft(superview.width); return self }
+    public func snapRight() -> UIView { snapLeft(superview?.width ?? left); return self }
     
     public func snapBottom(bottom: CGFloat) -> UIView { self.bottom = bottom; return self }
-    public func snapBottom() -> UIView { snapBottom(superview.height); return self }
+    public func snapBottom() -> UIView { snapBottom(superview!.height ?? bottom); return self }
     
     public func snapLeft(left: CGFloat) -> UIView { self.left = left; return self }
     public func snapLeft() -> UIView { snapLeft(0); return self }
@@ -58,8 +58,8 @@ extension UIView {
     public func snapFrame(frame: CGRect) -> UIView { self.frame = frame; return self }
     
     // Heirarchy
-    public func bringToFront() -> UIView { superview.bringSubviewToFront(self); return self }
-    public func sendToBack() -> UIView { superview.sendSubviewToBack(self); return self }
+    public func bringToFront() -> UIView { superview?.bringSubviewToFront(self); return self }
+    public func sendToBack() -> UIView { superview?.sendSubviewToBack(self); return self }
     
     // Frame in other views
     public func frameInWindow() -> CGRect { return frameInView(nil) }
