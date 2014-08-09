@@ -23,6 +23,7 @@
 		F02C38C2196A50CC0029AEE4 /* TKTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = F02C38C1196A50CC0029AEE4 /* TKTimer.swift */; };
 		F032F911196B71B500EF4269 /* Double.swift in Sources */ = {isa = PBXBuildFile; fileRef = F032F910196B71B500EF4269 /* Double.swift */; };
 		F032F913196B72BC00EF4269 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = F032F912196B72BC00EF4269 /* String.swift */; };
+		F097A65F1995F55B007ED9DF /* CGRect.swift in Sources */ = {isa = PBXBuildFile; fileRef = F097A65E1995F55B007ED9DF /* CGRect.swift */; };
 		F0AD1A30197361BD00EFD069 /* TKModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = F0AD1A2F197361BD00EFD069 /* TKModel.swift */; };
 /* End PBXBuildFile section */
 
@@ -91,6 +92,7 @@
 		F02C38C1196A50CC0029AEE4 /* TKTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TKTimer.swift; sourceTree = "<group>"; };
 		F032F910196B71B500EF4269 /* Double.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Double.swift; sourceTree = "<group>"; };
 		F032F912196B72BC00EF4269 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		F097A65E1995F55B007ED9DF /* CGRect.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CGRect.swift; sourceTree = "<group>"; };
 		F0AD1A2F197361BD00EFD069 /* TKModel.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TKModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -223,6 +225,7 @@
 				F02C38B9196A50870029AEE4 /* UIView.swift */,
 				F032F912196B72BC00EF4269 /* String.swift */,
 				F01FBE1D1995EB94009784EA /* NSTimer.swift */,
+				F097A65E1995F55B007ED9DF /* CGRect.swift */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -392,6 +395,7 @@
 				F02C38BE196A50870029AEE4 /* UIView.swift in Sources */,
 				F01FBE241995F17B009784EA /* TKit.swift in Sources */,
 				F032F913196B72BC00EF4269 /* String.swift in Sources */,
+				F097A65F1995F55B007ED9DF /* CGRect.swift in Sources */,
 				F02C38C2196A50CC0029AEE4 /* TKTimer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

@@ -15,20 +15,11 @@ public class TKTextField : UITextField {
     }
     }
     
-    // TODO: move to CGRect extensions?
-    private func rectFromEdgeInsets(rect: CGRect, edgeInsets: UIEdgeInsets) -> CGRect {
-        return CGRectMake(
-            rect.origin.x + edgeInsets.left,
-            rect.origin.y + edgeInsets.top,
-            rect.size.width - edgeInsets.left - edgeInsets.right,
-            rect.size.height - edgeInsets.top - edgeInsets.bottom);
-    }
-    
     override public func textRectForBounds(bounds: CGRect) -> CGRect {
-        return rectFromEdgeInsets(bounds, edgeInsets: edgeInsets)
+        return CGRectFromRect(bounds, edgeInsets)
     }
     
     override public func editingRectForBounds(bounds: CGRect) -> CGRect {
-        return rectFromEdgeInsets(bounds, edgeInsets: edgeInsets)
+        return CGRectFromRect(bounds, edgeInsets)
     }
 }
