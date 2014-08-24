@@ -8,7 +8,7 @@
 
 import Foundation
 
-public func CGRectFromRect(rect: CGRect, edgeInsets: UIEdgeInsets) -> CGRect {
+public func CGRectFromEdgeInsets(rect: CGRect, edgeInsets: UIEdgeInsets) -> CGRect {
     return CGRectMake(
         rect.origin.x + edgeInsets.left,
         rect.origin.y + edgeInsets.top,

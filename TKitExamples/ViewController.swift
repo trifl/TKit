@@ -12,9 +12,12 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     
     var tableView = UITableView()
     
-    let tests = [["name":"TKTimer", "class":"TKTimerViewController"]] as NSArray
+    let tests = [
+        ["name":"TKTimer", "class":"TKTimerViewController"],
+    ] as NSArray
+    
     let classes : Dictionary<String, ()->UIViewController> = [
-        "TKTimerViewController" : { return TKTimerViewController() }
+        "TKTimerViewController" : { return TKTimerViewController() },
     ]
     
     override func viewDidLoad() {
@@ -42,7 +45,7 @@ class ViewController: UIViewController, UITableViewDelegate, UITableViewDataSour
     func tableView(tableView: UITableView!, cellForRowAtIndexPath indexPath: NSIndexPath!) -> UITableViewCell! {
         var reuseIdentifier = "test"
         var cell = tableView.dequeueReusableCellWithIdentifier(reuseIdentifier) as? UITableViewCell
-        if (!cell) {
+        if (cell == nil) {
             cell = UITableViewCell(style: UITableViewCellStyle.Subtitle, reuseIdentifier: reuseIdentifier)
         }
         

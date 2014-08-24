@@ -10,16 +10,16 @@ import UIKit
 
 public class TKTextField : UITextField {
     public var edgeInsets: UIEdgeInsets = UIEdgeInsetsMake(5, 5, 5, 5) {
-    didSet {
-        setNeedsLayout()
-    }
+        didSet {
+            setNeedsLayout()
+        }
     }
     
     override public func textRectForBounds(bounds: CGRect) -> CGRect {
-        return CGRectFromRect(bounds, edgeInsets)
+        return CGRectFromEdgeInsets(bounds, edgeInsets)
     }
     
     override public func editingRectForBounds(bounds: CGRect) -> CGRect {
-        return CGRectFromRect(bounds, edgeInsets)
+        return CGRectFromEdgeInsets(bounds, edgeInsets)
     }
 }

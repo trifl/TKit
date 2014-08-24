@@ -61,7 +61,7 @@ class TKTimerViewController: UIViewController {
     // MARK: - gestures
     func setupTapGestureRecognizer() {
         tapGestureRecognizer = UITapGestureRecognizer(target: self, action: Selector("tapped:"))
-        view.addGestureRecognizer(tapGestureRecognizer)
+        view.addGestureRecognizer(tapGestureRecognizer!)
     }
     
     func tapped(tapGestureRecognizer:UITapGestureRecognizer) {
