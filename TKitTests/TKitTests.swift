@@ -2,27 +2,30 @@
 //  TKitTests.swift
 //  TKitTests
 //
-//  Created by JP McGlone on 6/25/14.
-//  Copyright (c) 2014 trifl. All rights reserved.
+//  Created by JP McGlone on 5/28/15.
+//  Copyright (c) 2015 trifl. All rights reserved.
 //
 
-import XCTest
-import TKit
 import UIKit
+import XCTest
 
 class TKitTests: XCTestCase {
-    var view = UIView()
     
     override func setUp() {
         super.setUp()
+        // Put setup code here. This method is called before the invocation of each test method in the class.
     }
     
     override func tearDown() {
-        view.x = 20
-        println(view.x)
+        // Put teardown code here. This method is called after the invocation of each test method in the class.
         super.tearDown()
     }
- 
+    
+    func testExample() {
+        // This is an example of a functional test case.
+        XCTAssert(true, "Pass")
+    }
+    
     func testPerformanceExample() {
         // This is an example of a performance test case.
         self.measureBlock() {
