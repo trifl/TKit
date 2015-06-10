@@ -14,8 +14,8 @@ public enum TKLayoutOrientation {
 }
 
 public extension UIView {
-  // TODO: determine if we need to setNeedsLayout or not. If not, do we really even need these extensions?
-  // ...decisions.
+  // Everything from here to tk_height isn't really needed in swift, since view.frame.size.width = x works,
+  // but it is a little neater, and this works very well w/ objective-c so it's staying in
   public var tk_origin: CGPoint { get { return frame.origin } set(origin) { frame.origin = origin} }
   public var tk_size: CGSize { get { return frame.size } set(size) { frame.size = size} }
   
@@ -90,9 +90,10 @@ public extension UIView {
   - [1, view1, 0.5, view2, 1] will space out view1 and view2 such that the margin of the left and the right are the same, but the space between the views will be half that of the margin
   */
   public func tk_layout(orientation: TKLayoutOrientation, views: [AnyObject]) {
-    // TODO: vertical
     var viewTotalD = 0 as CGFloat
     var totalSpacing = 0 as CGFloat
+    
+    // Get total deltas first
     for obj in views {
       if let view = obj as? UIView {
         if orientation == .Horizontal {
@@ -105,6 +106,7 @@ public extension UIView {
       }
     }
     
+    // Leftover delta
     var leftoverD: CGFloat!
     if orientation == .Horizontal {
       leftoverD = self.tk_width - viewTotalD
@@ -113,6 +115,7 @@ public extension UIView {
     }
     var ratio = leftoverD / totalSpacing as CGFloat
     
+    // Layout the views. O(2n)
     var d = 0 as CGFloat
     for obj in views {
       if let view = obj as? UIView {

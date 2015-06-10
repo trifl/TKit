@@ -15,12 +15,11 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
     
-    
     var view1 = UIView(frame: CGRectMake(0, 100, 25, 25))
     view1.backgroundColor = .greenColor()
     view.addSubview(view1)
     
-    var view2 = UIView(frame: CGRectMake(0, 100, 25, 25))
+    var view2 = UIView(frame: CGRectMake(0, 100, 50, 50))
     view2.backgroundColor = .redColor()
     view.addSubview(view2)
     
@@ -28,7 +27,9 @@ class ViewController: UIViewController {
     view3.backgroundColor = .redColor()
     view.addSubview(view3)
     
-    view.tk_layout(.Horizontal, views: [1, view1, 0.5, view2, 0.5, view3,  1])
+    view.tk_layout(.Vertical, views: [1, view1, 0.5, view2, 0.5, view3,  1])
+    
+    view3.frame.size.width = 100
   }
 
   override func didReceiveMemoryWarning() {
