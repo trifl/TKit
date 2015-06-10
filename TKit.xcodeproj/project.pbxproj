@@ -341,10 +341,10 @@
 			projectDirPath = "";
 			projectRoot = "";
 			targets = (
-				4015DF211B18064A004A4CB2 /* TKit */,
-				4015DF2C1B18064A004A4CB2 /* TKitTests */,
 				40B628BD1B27BF810003B318 /* TKitDemo */,
 				40B628D11B27BF810003B318 /* TKitDemoTests */,
+				4015DF211B18064A004A4CB2 /* TKit */,
+				4015DF2C1B18064A004A4CB2 /* TKitTests */,
 			);
 		};
 /* End PBXProject section */
