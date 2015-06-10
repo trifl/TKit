@@ -89,7 +89,7 @@ public extension UIView {
   
   - [1, view1, 0.5, view2, 1] will space out view1 and view2 such that the margin of the left and the right are the same, but the space between the views will be half that of the margin
   */
-  public func tk_layout(orientation: TKLayoutOrientation, views: [AnyObject]) {
+  public func tk_relativeLayout(orientation: TKLayoutOrientation, views: [AnyObject]) {
     var viewTotalD = 0 as CGFloat
     var totalSpacing = 0 as CGFloat
     
@@ -128,6 +128,23 @@ public extension UIView {
         }
       } else {
         d += ratio * (obj as! CGFloat)
+      }
+    }
+  }
+  
+  public func tk_linearLayout(orientation: TKLayoutOrientation, views: [AnyObject]) {
+    var d = 0 as CGFloat
+    for obj in views {
+      if let view = obj as? UIView {
+        if orientation == .Horizontal {
+          view.tk_left = d
+          d = view.tk_right
+        } else if orientation == .Vertical {
+          view.tk_top = d
+          d = view.tk_bottom
+        }
+      } else {
+        d += obj as! CGFloat
       }
     }
   }

@@ -27,8 +27,8 @@ class ViewController: UIViewController {
     view3.backgroundColor = .redColor()
     view.addSubview(view3)
     
-    view.tk_layout(.Vertical, views: [1, view1, 0.5, view2, 0.5, view3,  1])
-    
+      view.tk_relativeLayout(.Vertical, views: [1, view1, 0.5, view2, 0.5, view3,  1])
+//    view.tk_linearLayout(.Horizontal, views: [10, view1, 10, view2, 5, view3])
     view3.frame.size.width = 100
   }
 
