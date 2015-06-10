@@ -9,10 +9,6 @@
 import UIKit
 import Foundation
 
-public enum TKViewSide {
-  case Left, Top, Right, Bottom
-}
-
 public extension UIView {
   // TODO: determine if we need to setNeedsLayout or not. If not, do we really even need these extensions?
   // ...decisions.
@@ -27,31 +23,42 @@ public extension UIView {
   public var tk_left: CGFloat { get { return tk_x } set(left) { tk_x = left } }
   public var tk_top: CGFloat { get { return tk_y } set(top) { tk_y = top } }
   public var tk_right: CGFloat  { get { return tk_x + tk_width } set(right) { tk_x = right - tk_width } }
+  public var tk_rightMargin: CGFloat {
+    get {
+      if let superview = superview {
+        return superview.tk_width - tk_right
+      } else {
+        return 0
+      }
+    }
+    set(margin) {
+      if let superview = superview {
+        tk_right = superview.tk_width - margin
+      }
+    }
+  }
+  
   public var tk_bottom: CGFloat { get { return tk_y + tk_height } set(bottom) { tk_y = bottom - tk_height } }
+  public var tk_bottomMargin: CGFloat {
+    get {
+      if let superview = superview {
+        return superview.tk_height - tk_bottom
+      } else {
+        return 0
+      }
+    }
+    set(margin) {
+      if let superview = superview {
+        tk_bottom = superview.tk_height - margin
+      }
+    }
+  }
   
   // Similar to center, but in relation to itself
   public var tk_middle: CGPoint { get { return CGPointMake(tk_width.half, tk_height.half) }
     set(middle) {
       center.x += (self.tk_middle.x - middle.x)
       center.y += (self.tk_middle.y - middle.y)
-    }
-  }
-  
-  // Snap the view to a side with a given margin
-  public func tk_snap(#side: TKViewSide, margin: CGFloat) {
-    switch side {
-    case .Left:
-      tk_left = margin
-    case .Top:
-      tk_top = margin
-    case .Right:
-      if let superview = self.superview {
-        tk_right = superview.tk_width - margin
-      }
-    case .Bottom:
-      if let superView = self.superview {
-        tk_bottom = superview!.tk_height - margin
-      }
     }
   }
   

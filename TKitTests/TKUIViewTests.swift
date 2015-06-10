@@ -26,13 +26,13 @@ class TKUIViewTests : XCTestCase {
     view.tk_right = 13
     XCTAssertEqual(view.frame, CGRectMake(-87, -88, 100, 100), "frame should be {-87, -88, 100, 100}")
     
-    view.tk_snap(side: .Top, margin: 14)
+    view.tk_y = 14
     XCTAssertEqual(view.frame, CGRectMake(-87, 14, 100, 100), "frame should be {-87, 14, 100, 100}")
-    view.tk_snap(side: .Left, margin: 15)
+    view.tk_left = 15
     XCTAssertEqual(view.frame, CGRectMake(15, 14, 100, 100), "frame should be {15, 14, 100, 100}")
-    view.tk_snap(side: .Bottom, margin: 16)
+    view.tk_bottomMargin = 16
     XCTAssertEqual(view.frame, CGRectMake(15, 884, 100, 100), "frame should be {15, 884, 100, 100}")
-    view.tk_snap(side: .Right, margin: 17)
+    view.tk_rightMargin = 17
     XCTAssertEqual(view.frame, CGRectMake(883, 884, 100, 100), "frame should be {883, 884, 100, 100}")   
   }
 }
