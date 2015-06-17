@@ -1,11 +1,3 @@
-//
-//  TKTextField.swift
-//  TKit
-//
-//  Created by JP McGlone on 5/28/15.
-//  Copyright (c) 2015 trifl. All rights reserved.
-//
-
 import UIKit
 
 public class TKTextField : UITextField {

@@ -1,11 +1,3 @@
-//
-//  AppDelegate.swift
-//  TKitDemo
-//
-//  Created by JP McGlone on 6/9/15.
-//  Copyright (c) 2015 trifl. All rights reserved.
-//
-
 import UIKit
 
 @UIApplicationMain

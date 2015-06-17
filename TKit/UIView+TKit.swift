@@ -1,11 +1,3 @@
-//
-//  UIView+TKit.swift
-//  TKit
-//
-//  Created by JP McGlone on 5/28/15.
-//  Copyright (c) 2015 trifl. All rights reserved.
-//
-
 import UIKit
 import Foundation
 
@@ -18,7 +10,7 @@ public extension UIView {
   // but it is a little neater, and this works very well w/ objective-c so it's staying in
   public var tk_origin: CGPoint { get { return frame.origin } set(origin) { frame.origin = origin} }
   public var tk_size: CGSize { get { return frame.size } set(size) { frame.size = size} }
-  
+
   public var tk_x: CGFloat { get { return frame.origin.x } set(x) { frame.origin.x = x } }
   public var tk_y: CGFloat { get { return frame.origin.y } set(y) { frame.origin.y = y } }
   public var tk_width: CGFloat { get { return bounds.size.width } set(width) { bounds.size.width = width } }
