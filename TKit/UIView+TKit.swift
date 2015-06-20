@@ -5,12 +5,16 @@ public enum TKLayoutOrientation {
   case Horizontal, Vertical
 }
 
+public enum TKLayoutItem {
+  case Linear(CGFloat), Relative(CGFloat), View(UIView)
+}
+
 public extension UIView {
   // Everything from here to tk_height isn't really needed in swift, since view.frame.size.width = x works,
   // but it is a little neater, and this works very well w/ objective-c so it's staying in
   public var tk_origin: CGPoint { get { return frame.origin } set(origin) { frame.origin = origin} }
   public var tk_size: CGSize { get { return frame.size } set(size) { frame.size = size} }
-
+  
   public var tk_x: CGFloat { get { return frame.origin.x } set(x) { frame.origin.x = x } }
   public var tk_y: CGFloat { get { return frame.origin.y } set(y) { frame.origin.y = y } }
   public var tk_width: CGFloat { get { return bounds.size.width } set(width) { bounds.size.width = width } }
@@ -75,68 +79,60 @@ public extension UIView {
   /**
   layout your views horizontally or vertically
   :param: orienation the orientation you want to lay out in, .Horizontal or .Vertical
-  :views: the array of views and/or floats that represent relative spacing 
+  :items: the array of views and/or floats that represent relative spacing
   
   Example:
   
   - [1, view1, 0.5, view2, 1] will space out view1 and view2 such that the margin of the left and the right are the same, but the space between the views will be half that of the margin
   */
-  public func tk_relativeLayout(orientation: TKLayoutOrientation, views: [AnyObject]) {
-    var viewTotalD = 0 as CGFloat
-    var totalSpacing = 0 as CGFloat
+  public func tk_layout(orientation: TKLayoutOrientation, items: [TKLayoutItem]) {
+    var delta: CGFloat = 0
+    var totalPercentage: CGFloat = 0
     
     // Get total deltas first
-    for obj in views {
-      if let view = obj as? UIView {
-        if orientation == .Horizontal {
-          viewTotalD += view.tk_width
-        } else if orientation == .Vertical {
-          viewTotalD += view.tk_height
+    for item in items {
+      switch (item) {
+      case .View(let view):
+        switch orientation {
+        case .Horizontal:
+          delta += view.tk_width
+        case .Vertical:
+          delta += view.tk_height
         }
-      } else {
-        totalSpacing += obj as! CGFloat
+      case .Linear(let number):
+        delta += number
+      case .Relative(let percentage):
+        totalPercentage += percentage
       }
     }
     
     // Leftover delta
-    var leftoverD: CGFloat!
+    var leftoverDelta: CGFloat!
     if orientation == .Horizontal {
-      leftoverD = self.tk_width - viewTotalD
+      leftoverDelta = self.tk_width - delta
     } else if orientation == .Vertical {
-      leftoverD = self.tk_height - viewTotalD
+      leftoverDelta = self.tk_height - delta
     }
-    var ratio = leftoverD / totalSpacing as CGFloat
+    
+    var ratio: CGFloat = leftoverDelta / totalPercentage
     
     // Layout the views. O(2n)
-    var d = 0 as CGFloat
-    for obj in views {
-      if let view = obj as? UIView {
-        if orientation == .Horizontal {
-          view.tk_left = d
-          d = view.tk_right
-        } else if orientation == .Vertical {
-          view.tk_top = d
-          d = view.tk_bottom
+    delta = 0
+    for item in items {
+      switch (item) {
+      case .View(let view):
+        switch orientation {
+        case .Horizontal:
+          view.tk_left = delta
+          delta = view.tk_right
+        case .Vertical:
+          view.tk_top = delta
+          delta = view.tk_bottom
         }
-      } else {
-        d += ratio * (obj as! CGFloat)
-      }
-    }
-  }
-  
-  public func tk_linearLayout(orientation: TKLayoutOrientation, views: [AnyObject]) {
-    var d = 0 as CGFloat
-    for obj in views {
-      if let view = obj as? UIView {
-        if orientation == .Horizontal {
-          view.tk_left = d
-          d = view.tk_right
-        } else if orientation == .Vertical {
-          view.tk_top = d
-          d = view.tk_bottom
-        }
-      } else {
-        d += obj as! CGFloat
+      case .Linear(let number):
+        delta += number
+      case .Relative(let percentage):
+        delta += ratio * percentage
       }
     }
   }

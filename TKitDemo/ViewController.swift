@@ -19,11 +19,20 @@ class ViewController: UIViewController {
     view3.backgroundColor = .redColor()
     view.addSubview(view3)
     
-    view.tk_relativeLayout(.Vertical, views: [1, view1, 0.5, view2, 0.5, view3,  1])
-//    view.tk_linearLayout(.Horizontal, views: [10, view1, 10, view2, 5, view3])
+    view.tk_layout(.Horizontal, items: [
+      .Relative(1),
+      .View(view1),
+      .Linear(15),
+      .View(view2),
+      .Linear(10),
+      .View(view3),
+      .Relative(1)
+      ]
+    )
+    
     view3.frame.size.width = 100
   }
-
+  
   override func didReceiveMemoryWarning() {
     super.didReceiveMemoryWarning()
     // Dispose of any resources that can be recreated.
