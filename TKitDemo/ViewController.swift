@@ -7,6 +7,9 @@ class ViewController: UIViewController {
     super.viewDidLoad()
     // Do any additional setup after loading the view, typically from a nib.
     
+    let soundManager = TKSoundManager.sharedInstance    
+    soundManager.prepareSound(fileName: "test.wav")
+
     var view1 = UIView(frame: CGRectMake(0, 100, 25, 25))
     view1.backgroundColor = .greenColor()
     view.addSubview(view1)
@@ -31,6 +34,12 @@ class ViewController: UIViewController {
     )
     
     view3.frame.size.width = 100
+    
+    println("play!")
+    soundManager.playSound(fileName: "test.wav")
+    soundManager.removeSound(fileName: "test.wav")
+    soundManager.playSound(fileName: "test.wav")
+
   }
   
   override func didReceiveMemoryWarning() {
