@@ -15,14 +15,14 @@ public extension UIView {
   public var tk_origin: CGPoint { get { return frame.origin } set(origin) { frame.origin = origin} }
   public var tk_size: CGSize { get { return frame.size } set(size) { frame.size = size} }
   
-  public var tk_x: CGFloat { get { return frame.origin.x } set(x) { frame.origin.x = x } }
-  public var tk_y: CGFloat { get { return frame.origin.y } set(y) { frame.origin.y = y } }
-  public var tk_width: CGFloat { get { return bounds.size.width } set(width) { bounds.size.width = width } }
-  public var tk_height: CGFloat { get { return bounds.size.height } set(height) { bounds.size.height = height } }
+  public var tk_x: CGFloat { get { return frame.minX } set(x) { frame.origin.x = x } }
+  public var tk_y: CGFloat { get { return frame.minY } set(y) { frame.origin.y = y } }
+  public var tk_width: CGFloat { get { return bounds.width } set(width) { bounds.size.width = width } }
+  public var tk_height: CGFloat { get { return bounds.height} set(height) { bounds.size.height = height } }
   
   public var tk_left: CGFloat { get { return tk_x } set(left) { tk_x = left } }
   public var tk_top: CGFloat { get { return tk_y } set(top) { tk_y = top } }
-  public var tk_right: CGFloat  { get { return tk_x + tk_width } set(right) { tk_x = right - tk_width } }
+  public var tk_right: CGFloat  { get { return frame.maxX } set(right) { tk_x = right - tk_width } }
   public var tk_rightMargin: CGFloat {
     get {
       if let superview = superview {
@@ -38,7 +38,7 @@ public extension UIView {
     }
   }
   
-  public var tk_bottom: CGFloat { get { return tk_y + tk_height } set(bottom) { tk_y = bottom - tk_height } }
+  public var tk_bottom: CGFloat { get { return frame.maxY } set(bottom) { tk_y = bottom - tk_height } }
   public var tk_bottomMargin: CGFloat {
     get {
       if let superview = superview {
