@@ -1,5 +1,5 @@
 import Foundation
 
 extension String {
-  public var length: Int { return count(self) }
+  public var tk_length: Int { return count(self) }
 }

@@ -55,7 +55,7 @@ public extension UIView {
   }
   
   // Similar to center, but in relation to itself
-  public var tk_middle: CGPoint { get { return CGPointMake(tk_width.half, tk_height.half) }
+  public var tk_middle: CGPoint { get { return CGPointMake(tk_width.tk_half, tk_height.tk_half) }
     set(middle) {
       center.x += (self.tk_middle.x - middle.x)
       center.y += (self.tk_middle.y - middle.y)

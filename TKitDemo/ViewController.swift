@@ -35,11 +35,8 @@ class ViewController: UIViewController {
     
     view3.frame.size.width = 100
     
-    println("play!")
     soundManager.playSound(fileName: "test.wav")
     soundManager.removeSound(fileName: "test.wav")
-    soundManager.playSound(fileName: "test.wav")
-
   }
   
   override func didReceiveMemoryWarning() {

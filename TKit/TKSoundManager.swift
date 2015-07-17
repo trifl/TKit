@@ -1,7 +1,6 @@
 import Foundation
 import AVFoundation
 
-
 public class TKSoundManager: NSObject {
   // MARK: - Constants
   public let kDefaultExtension = "wav"

@@ -30,7 +30,6 @@
 		40B6296F1B35F57F0003B318 /* TKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4015DF221B18064A004A4CB2 /* TKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		40B629701B35F57F0003B318 /* TKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4015DF221B18064A004A4CB2 /* TKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
 		40B629751B35F6480003B318 /* TKTrigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B629741B35F6480003B318 /* TKTrigger.swift */; };
-		40B629761B3794500003B318 /* AVFoundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 40B629121B28FF480003B318 /* AVFoundation.framework */; settings = {ATTRIBUTES = (Weak, ); }; };
 		40B629781B37959C0003B318 /* test.wav in Resources */ = {isa = PBXBuildFile; fileRef = 40B629771B37959C0003B318 /* test.wav */; };
 		40B6297A1B3799E10003B318 /* Array+TKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B629791B3799E10003B318 /* Array+TKit.swift */; };
 /* End PBXBuildFile section */
@@ -112,7 +111,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40B629761B3794500003B318 /* AVFoundation.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -171,10 +169,10 @@
 				4015DF3E1B1806A0004A4CB2 /* TKTextField.swift */,
 				4015DF4B1B181BD4004A4CB2 /* TKTimer.swift */,
 				40B629101B28FEEC0003B318 /* TKSoundManager.swift */,
+				40B629741B35F6480003B318 /* TKTrigger.swift */,
 				4015DF401B180794004A4CB2 /* Extensions */,
 				4015DF251B18064A004A4CB2 /* Supporting Files */,
 				40B629141B28FF610003B318 /* Frameworks */,
-				40B629741B35F6480003B318 /* TKTrigger.swift */,
 			);
 			path = TKit;
 			sourceTree = "<group>";
