@@ -72,7 +72,7 @@ public extension UIView {
   
   public func tk_moveToView(view: UIView?) {
     view?.addSubview(self)
-    self.frame = tk_frameInView(view)
+    frame = tk_frameInView(view)
   }
   
   // MARK: Layout helpers
@@ -109,9 +109,9 @@ public extension UIView {
     // Leftover delta
     var leftoverDelta: CGFloat!
     if orientation == .Horizontal {
-      leftoverDelta = self.tk_width - delta
+      leftoverDelta = tk_width - delta
     } else if orientation == .Vertical {
-      leftoverDelta = self.tk_height - delta
+      leftoverDelta = tk_height - delta
     }
     
     var ratio: CGFloat = leftoverDelta / totalPercentage

@@ -23,18 +23,15 @@ class ViewController: UIViewController {
     view.addSubview(view3)
     
     view.tk_layout(.Horizontal, items: [
-      .Relative(1),
-      .View(view1),
       .Linear(15),
+      .View(view1),
       .View(view2),
-      .Linear(10),
+      .Relative(1),
       .View(view3),
-      .Relative(1)
+      .Linear(15)
       ]
     )
-    
-    view3.frame.size.width = 100
-    
+        
     soundManager.playSound(fileName: "test.wav")
     soundManager.removeSound(fileName: "test.wav")
   }
