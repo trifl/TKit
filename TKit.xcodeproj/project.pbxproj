@@ -7,18 +7,37 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		4014659A1B7079CB00F01E30 /* Array+TKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401465931B7079CB00F01E30 /* Array+TKit.swift */; };
+		4014659B1B7079CB00F01E30 /* CGRect+TKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401465941B7079CB00F01E30 /* CGRect+TKit.swift */; };
+		4014659C1B7079CB00F01E30 /* Double+TKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401465951B7079CB00F01E30 /* Double+TKit.swift */; };
+		4014659D1B7079CB00F01E30 /* NSTimer+TKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401465961B7079CB00F01E30 /* NSTimer+TKit.swift */; };
+		4014659E1B7079CB00F01E30 /* String+TKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401465971B7079CB00F01E30 /* String+TKit.swift */; };
+		4014659F1B7079CB00F01E30 /* UIColor+TKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401465981B7079CB00F01E30 /* UIColor+TKit.swift */; };
+		401465A01B7079CB00F01E30 /* UIView+TKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401465991B7079CB00F01E30 /* UIView+TKit.swift */; };
+		401465AA1B7079FF00F01E30 /* TKBlurViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401465A21B7079FF00F01E30 /* TKBlurViewController.swift */; };
+		401465AB1B7079FF00F01E30 /* TKGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401465A31B7079FF00F01E30 /* TKGradientView.swift */; };
+		401465AD1B7079FF00F01E30 /* TKLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401465A51B7079FF00F01E30 /* TKLayout.swift */; };
+		401465AE1B7079FF00F01E30 /* TKSoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401465A61B7079FF00F01E30 /* TKSoundManager.swift */; };
+		401465AF1B7079FF00F01E30 /* TKTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401465A71B7079FF00F01E30 /* TKTextField.swift */; };
+		401465B01B7079FF00F01E30 /* TKTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401465A81B7079FF00F01E30 /* TKTimer.swift */; };
+		401465B11B7079FF00F01E30 /* TKTrigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401465A91B7079FF00F01E30 /* TKTrigger.swift */; };
+		401465B31B707B2300F01E30 /* TKBlurViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401465A21B7079FF00F01E30 /* TKBlurViewController.swift */; };
+		401465B41B707B2300F01E30 /* TKGradientView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401465A31B7079FF00F01E30 /* TKGradientView.swift */; };
+		401465B51B707B2300F01E30 /* TKLayout.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401465A51B7079FF00F01E30 /* TKLayout.swift */; };
+		401465B61B707B2300F01E30 /* TKSoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401465A61B7079FF00F01E30 /* TKSoundManager.swift */; };
+		401465B71B707B2300F01E30 /* TKTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401465A71B7079FF00F01E30 /* TKTextField.swift */; };
+		401465B81B707B2300F01E30 /* TKTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401465A81B7079FF00F01E30 /* TKTimer.swift */; };
+		401465B91B707B2300F01E30 /* TKTrigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401465A91B7079FF00F01E30 /* TKTrigger.swift */; };
+		401465BA1B707B2700F01E30 /* Array+TKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401465931B7079CB00F01E30 /* Array+TKit.swift */; };
+		401465BB1B707B2700F01E30 /* CGRect+TKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401465941B7079CB00F01E30 /* CGRect+TKit.swift */; };
+		401465BC1B707B2700F01E30 /* Double+TKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401465951B7079CB00F01E30 /* Double+TKit.swift */; };
+		401465BD1B707B2700F01E30 /* NSTimer+TKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401465961B7079CB00F01E30 /* NSTimer+TKit.swift */; };
+		401465BE1B707B2700F01E30 /* String+TKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401465971B7079CB00F01E30 /* String+TKit.swift */; };
+		401465BF1B707B2700F01E30 /* UIColor+TKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401465981B7079CB00F01E30 /* UIColor+TKit.swift */; };
+		401465C01B707B2700F01E30 /* UIView+TKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401465991B7079CB00F01E30 /* UIView+TKit.swift */; };
 		4015DF281B18064A004A4CB2 /* TKit.h in Headers */ = {isa = PBXBuildFile; fileRef = 4015DF271B18064A004A4CB2 /* TKit.h */; settings = {ATTRIBUTES = (Public, ); }; };
-		4015DF2E1B18064A004A4CB2 /* TKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4015DF221B18064A004A4CB2 /* TKit.framework */; };
 		4015DF351B18064A004A4CB2 /* TKitTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4015DF341B18064A004A4CB2 /* TKitTests.swift */; };
-		4015DF3F1B1806A0004A4CB2 /* TKTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4015DF3E1B1806A0004A4CB2 /* TKTextField.swift */; };
-		4015DF421B1807F6004A4CB2 /* CGRect+TKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4015DF411B1807F6004A4CB2 /* CGRect+TKit.swift */; };
-		4015DF441B180FF4004A4CB2 /* NSTimer+TKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4015DF431B180FF4004A4CB2 /* NSTimer+TKit.swift */; };
-		4015DF461B18107D004A4CB2 /* String+TKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4015DF451B18107D004A4CB2 /* String+TKit.swift */; };
-		4015DF481B18110A004A4CB2 /* UIView+TKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4015DF471B18110A004A4CB2 /* UIView+TKit.swift */; };
-		4015DF4A1B181261004A4CB2 /* Double+TKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4015DF491B181261004A4CB2 /* Double+TKit.swift */; };
-		4015DF4C1B181BD4004A4CB2 /* TKTimer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4015DF4B1B181BD4004A4CB2 /* TKTimer.swift */; };
 		4015DF4F1B182168004A4CB2 /* TKUIViewTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4015DF4E1B182168004A4CB2 /* TKUIViewTests.swift */; };
-		4015DF511B1837B8004A4CB2 /* UIColor+TKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4015DF501B1837B8004A4CB2 /* UIColor+TKit.swift */; };
 		4015DF531B183BCD004A4CB2 /* TKUIColorTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4015DF521B183BCD004A4CB2 /* TKUIColorTests.swift */; };
 		40B628C31B27BF810003B318 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B628C21B27BF810003B318 /* AppDelegate.swift */; };
 		40B628C51B27BF810003B318 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B628C41B27BF810003B318 /* ViewController.swift */; };
@@ -26,22 +45,11 @@
 		40B628CA1B27BF810003B318 /* Images.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 40B628C91B27BF810003B318 /* Images.xcassets */; };
 		40B628CD1B27BF810003B318 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40B628CB1B27BF810003B318 /* LaunchScreen.xib */; };
 		40B628D91B27BF810003B318 /* TKitDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B628D81B27BF810003B318 /* TKitDemoTests.swift */; };
-		40B629111B28FEEC0003B318 /* TKSoundManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B629101B28FEEC0003B318 /* TKSoundManager.swift */; };
-		40B6296F1B35F57F0003B318 /* TKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 4015DF221B18064A004A4CB2 /* TKit.framework */; settings = {ATTRIBUTES = (Required, ); }; };
 		40B629701B35F57F0003B318 /* TKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4015DF221B18064A004A4CB2 /* TKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		40B629751B35F6480003B318 /* TKTrigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B629741B35F6480003B318 /* TKTrigger.swift */; };
 		40B629781B37959C0003B318 /* test.wav in Resources */ = {isa = PBXBuildFile; fileRef = 40B629771B37959C0003B318 /* test.wav */; };
-		40B6297A1B3799E10003B318 /* Array+TKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B629791B3799E10003B318 /* Array+TKit.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
-		4015DF2F1B18064A004A4CB2 /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 4015DF191B18064A004A4CB2 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 4015DF211B18064A004A4CB2;
-			remoteInfo = TKit;
-		};
 		40B628D31B27BF810003B318 /* PBXContainerItemProxy */ = {
 			isa = PBXContainerItemProxy;
 			containerPortal = 4015DF191B18064A004A4CB2 /* Project object */;
@@ -73,21 +81,27 @@
 /* End PBXCopyFilesBuildPhase section */
 
 /* Begin PBXFileReference section */
+		401465931B7079CB00F01E30 /* Array+TKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+TKit.swift"; sourceTree = "<group>"; };
+		401465941B7079CB00F01E30 /* CGRect+TKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+TKit.swift"; sourceTree = "<group>"; };
+		401465951B7079CB00F01E30 /* Double+TKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+TKit.swift"; sourceTree = "<group>"; };
+		401465961B7079CB00F01E30 /* NSTimer+TKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSTimer+TKit.swift"; sourceTree = "<group>"; };
+		401465971B7079CB00F01E30 /* String+TKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+TKit.swift"; sourceTree = "<group>"; };
+		401465981B7079CB00F01E30 /* UIColor+TKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+TKit.swift"; sourceTree = "<group>"; };
+		401465991B7079CB00F01E30 /* UIView+TKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+TKit.swift"; sourceTree = "<group>"; };
+		401465A21B7079FF00F01E30 /* TKBlurViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TKBlurViewController.swift; sourceTree = "<group>"; };
+		401465A31B7079FF00F01E30 /* TKGradientView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TKGradientView.swift; sourceTree = "<group>"; };
+		401465A51B7079FF00F01E30 /* TKLayout.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TKLayout.swift; sourceTree = "<group>"; };
+		401465A61B7079FF00F01E30 /* TKSoundManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TKSoundManager.swift; sourceTree = "<group>"; };
+		401465A71B7079FF00F01E30 /* TKTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TKTextField.swift; sourceTree = "<group>"; };
+		401465A81B7079FF00F01E30 /* TKTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TKTimer.swift; sourceTree = "<group>"; };
+		401465A91B7079FF00F01E30 /* TKTrigger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TKTrigger.swift; sourceTree = "<group>"; };
 		4015DF221B18064A004A4CB2 /* TKit.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = TKit.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		4015DF261B18064A004A4CB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4015DF271B18064A004A4CB2 /* TKit.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TKit.h; sourceTree = "<group>"; };
 		4015DF2D1B18064A004A4CB2 /* TKitTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TKitTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4015DF331B18064A004A4CB2 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		4015DF341B18064A004A4CB2 /* TKitTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TKitTests.swift; sourceTree = "<group>"; };
-		4015DF3E1B1806A0004A4CB2 /* TKTextField.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TKTextField.swift; sourceTree = "<group>"; };
-		4015DF411B1807F6004A4CB2 /* CGRect+TKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+TKit.swift"; sourceTree = "<group>"; };
-		4015DF431B180FF4004A4CB2 /* NSTimer+TKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSTimer+TKit.swift"; sourceTree = "<group>"; };
-		4015DF451B18107D004A4CB2 /* String+TKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+TKit.swift"; sourceTree = "<group>"; };
-		4015DF471B18110A004A4CB2 /* UIView+TKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+TKit.swift"; sourceTree = "<group>"; };
-		4015DF491B181261004A4CB2 /* Double+TKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+TKit.swift"; sourceTree = "<group>"; };
-		4015DF4B1B181BD4004A4CB2 /* TKTimer.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TKTimer.swift; sourceTree = "<group>"; };
 		4015DF4E1B182168004A4CB2 /* TKUIViewTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TKUIViewTests.swift; sourceTree = "<group>"; };
-		4015DF501B1837B8004A4CB2 /* UIColor+TKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+TKit.swift"; sourceTree = "<group>"; };
 		4015DF521B183BCD004A4CB2 /* TKUIColorTests.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TKUIColorTests.swift; sourceTree = "<group>"; };
 		40B628BE1B27BF810003B318 /* TKitDemo.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TKitDemo.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		40B628C11B27BF810003B318 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
@@ -99,11 +113,8 @@
 		40B628D21B27BF810003B318 /* TKitDemoTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TKitDemoTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		40B628D71B27BF810003B318 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40B628D81B27BF810003B318 /* TKitDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TKitDemoTests.swift; sourceTree = "<group>"; };
-		40B629101B28FEEC0003B318 /* TKSoundManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TKSoundManager.swift; sourceTree = "<group>"; };
 		40B629121B28FF480003B318 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		40B629741B35F6480003B318 /* TKTrigger.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TKTrigger.swift; sourceTree = "<group>"; };
 		40B629771B37959C0003B318 /* test.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = test.wav; path = ../../../Downloads/test.wav; sourceTree = "<group>"; };
-		40B629791B3799E10003B318 /* Array+TKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+TKit.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -118,7 +129,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				4015DF2E1B18064A004A4CB2 /* TKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -126,7 +136,6 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40B6296F1B35F57F0003B318 /* TKit.framework in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -140,6 +149,20 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		401465A11B7079DC00F01E30 /* Utility */ = {
+			isa = PBXGroup;
+			children = (
+				401465A21B7079FF00F01E30 /* TKBlurViewController.swift */,
+				401465A31B7079FF00F01E30 /* TKGradientView.swift */,
+				401465A51B7079FF00F01E30 /* TKLayout.swift */,
+				401465A61B7079FF00F01E30 /* TKSoundManager.swift */,
+				401465A71B7079FF00F01E30 /* TKTextField.swift */,
+				401465A81B7079FF00F01E30 /* TKTimer.swift */,
+				401465A91B7079FF00F01E30 /* TKTrigger.swift */,
+			);
+			name = Utility;
+			sourceTree = "<group>";
+		};
 		4015DF181B18064A004A4CB2 = {
 			isa = PBXGroup;
 			children = (
@@ -165,14 +188,11 @@
 		4015DF241B18064A004A4CB2 /* TKit */ = {
 			isa = PBXGroup;
 			children = (
-				4015DF271B18064A004A4CB2 /* TKit.h */,
-				4015DF3E1B1806A0004A4CB2 /* TKTextField.swift */,
-				4015DF4B1B181BD4004A4CB2 /* TKTimer.swift */,
-				40B629101B28FEEC0003B318 /* TKSoundManager.swift */,
-				40B629741B35F6480003B318 /* TKTrigger.swift */,
+				401465A11B7079DC00F01E30 /* Utility */,
 				4015DF401B180794004A4CB2 /* Extensions */,
-				4015DF251B18064A004A4CB2 /* Supporting Files */,
 				40B629141B28FF610003B318 /* Frameworks */,
+				4015DF251B18064A004A4CB2 /* Supporting Files */,
+				4015DF271B18064A004A4CB2 /* TKit.h */,
 			);
 			path = TKit;
 			sourceTree = "<group>";
@@ -207,13 +227,13 @@
 		4015DF401B180794004A4CB2 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				4015DF411B1807F6004A4CB2 /* CGRect+TKit.swift */,
-				4015DF431B180FF4004A4CB2 /* NSTimer+TKit.swift */,
-				4015DF451B18107D004A4CB2 /* String+TKit.swift */,
-				4015DF471B18110A004A4CB2 /* UIView+TKit.swift */,
-				4015DF491B181261004A4CB2 /* Double+TKit.swift */,
-				4015DF501B1837B8004A4CB2 /* UIColor+TKit.swift */,
-				40B629791B3799E10003B318 /* Array+TKit.swift */,
+				401465931B7079CB00F01E30 /* Array+TKit.swift */,
+				401465941B7079CB00F01E30 /* CGRect+TKit.swift */,
+				401465951B7079CB00F01E30 /* Double+TKit.swift */,
+				401465961B7079CB00F01E30 /* NSTimer+TKit.swift */,
+				401465971B7079CB00F01E30 /* String+TKit.swift */,
+				401465981B7079CB00F01E30 /* UIColor+TKit.swift */,
+				401465991B7079CB00F01E30 /* UIView+TKit.swift */,
 			);
 			name = Extensions;
 			sourceTree = "<group>";
@@ -308,7 +328,6 @@
 			buildRules = (
 			);
 			dependencies = (
-				4015DF301B18064A004A4CB2 /* PBXTargetDependency */,
 			);
 			name = TKitTests;
 			productName = TKitTests;
@@ -437,17 +456,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40B629111B28FEEC0003B318 /* TKSoundManager.swift in Sources */,
-				4015DF441B180FF4004A4CB2 /* NSTimer+TKit.swift in Sources */,
-				4015DF511B1837B8004A4CB2 /* UIColor+TKit.swift in Sources */,
-				40B629751B35F6480003B318 /* TKTrigger.swift in Sources */,
-				4015DF481B18110A004A4CB2 /* UIView+TKit.swift in Sources */,
-				4015DF4C1B181BD4004A4CB2 /* TKTimer.swift in Sources */,
-				4015DF4A1B181261004A4CB2 /* Double+TKit.swift in Sources */,
-				4015DF3F1B1806A0004A4CB2 /* TKTextField.swift in Sources */,
-				40B6297A1B3799E10003B318 /* Array+TKit.swift in Sources */,
-				4015DF461B18107D004A4CB2 /* String+TKit.swift in Sources */,
-				4015DF421B1807F6004A4CB2 /* CGRect+TKit.swift in Sources */,
+				401465AF1B7079FF00F01E30 /* TKTextField.swift in Sources */,
+				401465B11B7079FF00F01E30 /* TKTrigger.swift in Sources */,
+				401465AA1B7079FF00F01E30 /* TKBlurViewController.swift in Sources */,
+				4014659E1B7079CB00F01E30 /* String+TKit.swift in Sources */,
+				401465B01B7079FF00F01E30 /* TKTimer.swift in Sources */,
+				4014659C1B7079CB00F01E30 /* Double+TKit.swift in Sources */,
+				4014659B1B7079CB00F01E30 /* CGRect+TKit.swift in Sources */,
+				401465AD1B7079FF00F01E30 /* TKLayout.swift in Sources */,
+				4014659F1B7079CB00F01E30 /* UIColor+TKit.swift in Sources */,
+				401465AB1B7079FF00F01E30 /* TKGradientView.swift in Sources */,
+				401465A01B7079CB00F01E30 /* UIView+TKit.swift in Sources */,
+				4014659D1B7079CB00F01E30 /* NSTimer+TKit.swift in Sources */,
+				401465AE1B7079FF00F01E30 /* TKSoundManager.swift in Sources */,
+				4014659A1B7079CB00F01E30 /* Array+TKit.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -455,9 +477,23 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				401465B81B707B2300F01E30 /* TKTimer.swift in Sources */,
+				401465BF1B707B2700F01E30 /* UIColor+TKit.swift in Sources */,
+				401465B31B707B2300F01E30 /* TKBlurViewController.swift in Sources */,
+				401465B61B707B2300F01E30 /* TKSoundManager.swift in Sources */,
+				401465B91B707B2300F01E30 /* TKTrigger.swift in Sources */,
 				4015DF4F1B182168004A4CB2 /* TKUIViewTests.swift in Sources */,
+				401465BC1B707B2700F01E30 /* Double+TKit.swift in Sources */,
 				4015DF351B18064A004A4CB2 /* TKitTests.swift in Sources */,
+				401465B71B707B2300F01E30 /* TKTextField.swift in Sources */,
+				401465C01B707B2700F01E30 /* UIView+TKit.swift in Sources */,
+				401465BB1B707B2700F01E30 /* CGRect+TKit.swift in Sources */,
 				4015DF531B183BCD004A4CB2 /* TKUIColorTests.swift in Sources */,
+				401465BD1B707B2700F01E30 /* NSTimer+TKit.swift in Sources */,
+				401465BA1B707B2700F01E30 /* Array+TKit.swift in Sources */,
+				401465BE1B707B2700F01E30 /* String+TKit.swift in Sources */,
+				401465B51B707B2300F01E30 /* TKLayout.swift in Sources */,
+				401465B41B707B2300F01E30 /* TKGradientView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -481,11 +517,6 @@
 /* End PBXSourcesBuildPhase section */
 
 /* Begin PBXTargetDependency section */
-		4015DF301B18064A004A4CB2 /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 4015DF211B18064A004A4CB2 /* TKit */;
-			targetProxy = 4015DF2F1B18064A004A4CB2 /* PBXContainerItemProxy */;
-		};
 		40B628D41B27BF810003B318 /* PBXTargetDependency */ = {
 			isa = PBXTargetDependency;
 			target = 40B628BD1B27BF810003B318 /* TKitDemo */;
@@ -619,6 +650,7 @@
 				INFOPLIST_FILE = TKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = mh_dylib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
@@ -637,6 +669,7 @@
 				INFOPLIST_FILE = TKit/Info.plist;
 				INSTALL_PATH = "$(LOCAL_LIBRARY_DIR)/Frameworks";
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = mh_dylib;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SKIP_INSTALL = YES;
 			};
@@ -655,6 +688,7 @@
 				);
 				INFOPLIST_FILE = TKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = mh_bundle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Debug;
@@ -668,6 +702,7 @@
 				);
 				INFOPLIST_FILE = TKitTests/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks @loader_path/Frameworks";
+				MACH_O_TYPE = mh_bundle;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 			};
 			name = Release;
@@ -702,6 +737,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",
@@ -721,6 +757,7 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
+				EMBEDDED_CONTENT_CONTAINS_SWIFT = YES;
 				FRAMEWORK_SEARCH_PATHS = (
 					"$(SDKROOT)/Developer/Library/Frameworks",
 					"$(inherited)",

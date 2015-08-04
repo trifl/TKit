@@ -1,4 +1,4 @@
-import Foundation
+import CoreGraphics
 
 public extension CGFloat {
   public var tk_thrice: CGFloat { return self * 3.0 }

@@ -6,7 +6,6 @@ public class TKTextField : UITextField {
       setNeedsLayout()
     }
   }
-  
   override public func textRectForBounds(bounds: CGRect) -> CGRect {
     return CGRectFromEdgeInsets(bounds, edgeInsets)
   }

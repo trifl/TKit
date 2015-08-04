@@ -1,5 +1,3 @@
-import Foundation
-
 extension Array {
   mutating func tk_remove<U: Equatable>(object: U) -> Bool {
     for (idx, objectToCompare) in enumerate(self) {

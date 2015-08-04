@@ -1,4 +1,4 @@
-import Foundation
+import UIKit
 
 public func CGRectFromEdgeInsets(rect: CGRect, edgeInsets: UIEdgeInsets) -> CGRect {
   return CGRectMake(
