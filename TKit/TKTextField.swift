@@ -7,10 +7,10 @@ public class TKTextField : UITextField {
     }
   }
   override public func textRectForBounds(bounds: CGRect) -> CGRect {
-    return CGRectFromEdgeInsets(bounds, edgeInsets)
+    return CGRectFromEdgeInsets(bounds, edgeInsets: edgeInsets)
   }
   
   override public func editingRectForBounds(bounds: CGRect) -> CGRect {
-    return CGRectFromEdgeInsets(bounds, edgeInsets)
+    return CGRectFromEdgeInsets(bounds, edgeInsets: edgeInsets)
   }
 }

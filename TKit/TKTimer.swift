@@ -48,7 +48,7 @@ public class TKTimer {
         time = min(time, duration)
       }
       
-      var stop = !timeFunction(time)
+      let stop = !timeFunction(time)
       if stop || (usesDuration && time == duration) {
         invalidate()
       }

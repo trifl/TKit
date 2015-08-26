@@ -13,34 +13,34 @@ public class TKBlurViewController: UIViewController {
     super.init(nibName: nil, bundle: nil)
   }
   
-  public required init(coder aDecoder: NSCoder) {
+  public required init?(coder aDecoder: NSCoder) {
     fatalError("init(coder:) has not been implemented")
   }
   
   public override func viewDidLoad() {
     super.viewDidLoad()
-
+    
     blurView.alpha = 0
     blurView.frame = view.bounds
-    blurView.autoresizingMask = .FlexibleWidth | .FlexibleHeight
+    blurView.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
     view.addSubview(blurView)
     
     addChildViewController(rootViewController)
     view.addSubview(rootViewController.view)
     rootViewController.didMoveToParentViewController(self)
-
+    
     rootViewController.view.alpha = 0
     rootViewController.view.frame = view.bounds
-    rootViewController.view.autoresizingMask = .FlexibleWidth | .FlexibleHeight
+    rootViewController.view.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
   }
   
   public func present(parentViewController: UIViewController) {
     parentViewController.addChildViewController(self)
-    parentViewController.view.addSubview(self.view)
-    self.didMoveToParentViewController(parentViewController)
-
-    self.view.frame = parentViewController.view.bounds
-    self.view.autoresizingMask = .FlexibleWidth | .FlexibleHeight
+    parentViewController.view.addSubview(view)
+    didMoveToParentViewController(parentViewController)
+    
+    view.frame = parentViewController.view.bounds
+    view.autoresizingMask = [.FlexibleWidth, .FlexibleHeight]
     
     UIView.animateWithDuration(0.2, animations: {
       self.blurView.alpha = 1
@@ -51,7 +51,7 @@ public class TKBlurViewController: UIViewController {
   
   public func dismiss(completion: ((Bool) -> Void)? = nil) {
     let theCompletion = completion
-    self.willMoveToParentViewController(nil)
+    willMoveToParentViewController(nil)
     UIView.animateWithDuration(0.2, animations: {
       self.blurView.alpha = 0
       self.rootViewController.view.alpha = 0

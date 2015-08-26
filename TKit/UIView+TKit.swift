@@ -77,7 +77,7 @@ public extension UIView {
   // MARK: Layout helpers
   /**
   layout your views horizontally or vertically
-  :param: orienation the orientation you want to lay out in, .Horizontal or .Vertical
+  - parameter orienation: the orientation you want to lay out in, .Horizontal or .Vertical
   :items: the array of views and/or floats that represent relative spacing
   
   Example:
@@ -113,7 +113,7 @@ public extension UIView {
       leftoverDelta = tk_height - delta
     }
     
-    var ratio: CGFloat = leftoverDelta / totalPercentage
+    let ratio: CGFloat = leftoverDelta / totalPercentage
     
     // Layout the views. O(2n)
     delta = 0

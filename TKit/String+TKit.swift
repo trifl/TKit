@@ -1,7 +1,7 @@
 import Foundation
 
 extension String {
-  public var tk_length: Int { return count(self) }
+  public var tk_length: Int { return characters.count }
   
   public func tk_stringByURLEncoding() -> String {
     return CFURLCreateStringByAddingPercentEscapes(
