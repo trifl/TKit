@@ -144,10 +144,7 @@
 		401465A11B7079DC00F01E30 /* Utility */ = {
 			isa = PBXGroup;
 			children = (
-				401465A21B7079FF00F01E30 /* TKBlurViewController.swift */,
-				401465A31B7079FF00F01E30 /* TKGradientView.swift */,
-				401465A51B7079FF00F01E30 /* TKLayout.swift */,
-				401465A71B7079FF00F01E30 /* TKTextField.swift */,
+				40773BC71BA53E2200FFA747 /* UI */,
 				401465A81B7079FF00F01E30 /* TKTimer.swift */,
 				401465A91B7079FF00F01E30 /* TKTrigger.swift */,
 			);
@@ -226,6 +223,17 @@
 				401465991B7079CB00F01E30 /* UIView+TKit.swift */,
 			);
 			name = Extensions;
+			sourceTree = "<group>";
+		};
+		40773BC71BA53E2200FFA747 /* UI */ = {
+			isa = PBXGroup;
+			children = (
+				401465A21B7079FF00F01E30 /* TKBlurViewController.swift */,
+				401465A31B7079FF00F01E30 /* TKGradientView.swift */,
+				401465A51B7079FF00F01E30 /* TKLayout.swift */,
+				401465A71B7079FF00F01E30 /* TKTextField.swift */,
+			);
+			name = UI;
 			sourceTree = "<group>";
 		};
 		40B628BF1B27BF810003B318 /* TKitDemo */ = {
