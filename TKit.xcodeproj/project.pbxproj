@@ -9,7 +9,6 @@
 /* Begin PBXBuildFile section */
 		4014659A1B7079CB00F01E30 /* Array+TKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401465931B7079CB00F01E30 /* Array+TKit.swift */; };
 		4014659B1B7079CB00F01E30 /* CGRect+TKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401465941B7079CB00F01E30 /* CGRect+TKit.swift */; };
-		4014659C1B7079CB00F01E30 /* Double+TKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401465951B7079CB00F01E30 /* Double+TKit.swift */; };
 		4014659D1B7079CB00F01E30 /* NSTimer+TKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401465961B7079CB00F01E30 /* NSTimer+TKit.swift */; };
 		4014659E1B7079CB00F01E30 /* String+TKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401465971B7079CB00F01E30 /* String+TKit.swift */; };
 		4014659F1B7079CB00F01E30 /* UIColor+TKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401465981B7079CB00F01E30 /* UIColor+TKit.swift */; };
@@ -28,7 +27,6 @@
 		401465B91B707B2300F01E30 /* TKTrigger.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401465A91B7079FF00F01E30 /* TKTrigger.swift */; };
 		401465BA1B707B2700F01E30 /* Array+TKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401465931B7079CB00F01E30 /* Array+TKit.swift */; };
 		401465BB1B707B2700F01E30 /* CGRect+TKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401465941B7079CB00F01E30 /* CGRect+TKit.swift */; };
-		401465BC1B707B2700F01E30 /* Double+TKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401465951B7079CB00F01E30 /* Double+TKit.swift */; };
 		401465BD1B707B2700F01E30 /* NSTimer+TKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401465961B7079CB00F01E30 /* NSTimer+TKit.swift */; };
 		401465BE1B707B2700F01E30 /* String+TKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401465971B7079CB00F01E30 /* String+TKit.swift */; };
 		401465BF1B707B2700F01E30 /* UIColor+TKit.swift in Sources */ = {isa = PBXBuildFile; fileRef = 401465981B7079CB00F01E30 /* UIColor+TKit.swift */; };
@@ -80,7 +78,6 @@
 /* Begin PBXFileReference section */
 		401465931B7079CB00F01E30 /* Array+TKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Array+TKit.swift"; sourceTree = "<group>"; };
 		401465941B7079CB00F01E30 /* CGRect+TKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "CGRect+TKit.swift"; sourceTree = "<group>"; };
-		401465951B7079CB00F01E30 /* Double+TKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "Double+TKit.swift"; sourceTree = "<group>"; };
 		401465961B7079CB00F01E30 /* NSTimer+TKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "NSTimer+TKit.swift"; sourceTree = "<group>"; };
 		401465971B7079CB00F01E30 /* String+TKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+TKit.swift"; sourceTree = "<group>"; };
 		401465981B7079CB00F01E30 /* UIColor+TKit.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIColor+TKit.swift"; sourceTree = "<group>"; };
@@ -223,7 +220,6 @@
 			children = (
 				401465931B7079CB00F01E30 /* Array+TKit.swift */,
 				401465941B7079CB00F01E30 /* CGRect+TKit.swift */,
-				401465951B7079CB00F01E30 /* Double+TKit.swift */,
 				401465961B7079CB00F01E30 /* NSTimer+TKit.swift */,
 				401465971B7079CB00F01E30 /* String+TKit.swift */,
 				401465981B7079CB00F01E30 /* UIColor+TKit.swift */,
@@ -455,7 +451,6 @@
 				401465AA1B7079FF00F01E30 /* TKBlurViewController.swift in Sources */,
 				4014659E1B7079CB00F01E30 /* String+TKit.swift in Sources */,
 				401465B01B7079FF00F01E30 /* TKTimer.swift in Sources */,
-				4014659C1B7079CB00F01E30 /* Double+TKit.swift in Sources */,
 				4014659B1B7079CB00F01E30 /* CGRect+TKit.swift in Sources */,
 				401465AD1B7079FF00F01E30 /* TKLayout.swift in Sources */,
 				4014659F1B7079CB00F01E30 /* UIColor+TKit.swift in Sources */,
@@ -475,7 +470,6 @@
 				401465B31B707B2300F01E30 /* TKBlurViewController.swift in Sources */,
 				401465B91B707B2300F01E30 /* TKTrigger.swift in Sources */,
 				4015DF4F1B182168004A4CB2 /* TKUIViewTests.swift in Sources */,
-				401465BC1B707B2700F01E30 /* Double+TKit.swift in Sources */,
 				4015DF351B18064A004A4CB2 /* TKitTests.swift in Sources */,
 				401465B71B707B2300F01E30 /* TKTextField.swift in Sources */,
 				401465C01B707B2700F01E30 /* UIView+TKit.swift in Sources */,
