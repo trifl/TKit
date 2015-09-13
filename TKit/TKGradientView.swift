@@ -3,9 +3,11 @@ import QuartzCore
 
 public class TKGradientView: UIView {
   private let gradientLayer: CAGradientLayer = CAGradientLayer()
-  public var colors = [CGColorRef]() {
+  public var colors = [UIColor]() {
     didSet {
-      gradientLayer.colors = colors
+      gradientLayer.colors = colors.map({
+        return $0.CGColor
+      })
     }
   }
   

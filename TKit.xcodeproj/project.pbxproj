@@ -44,7 +44,6 @@
 		40B628CD1B27BF810003B318 /* LaunchScreen.xib in Resources */ = {isa = PBXBuildFile; fileRef = 40B628CB1B27BF810003B318 /* LaunchScreen.xib */; };
 		40B628D91B27BF810003B318 /* TKitDemoTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 40B628D81B27BF810003B318 /* TKitDemoTests.swift */; };
 		40B629701B35F57F0003B318 /* TKit.framework in Embed Frameworks */ = {isa = PBXBuildFile; fileRef = 4015DF221B18064A004A4CB2 /* TKit.framework */; settings = {ATTRIBUTES = (CodeSignOnCopy, RemoveHeadersOnCopy, ); }; };
-		40B629781B37959C0003B318 /* test.wav in Resources */ = {isa = PBXBuildFile; fileRef = 40B629771B37959C0003B318 /* test.wav */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -111,7 +110,6 @@
 		40B628D71B27BF810003B318 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		40B628D81B27BF810003B318 /* TKitDemoTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TKitDemoTests.swift; sourceTree = "<group>"; };
 		40B629121B28FF480003B318 /* AVFoundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = AVFoundation.framework; path = System/Library/Frameworks/AVFoundation.framework; sourceTree = SDKROOT; };
-		40B629771B37959C0003B318 /* test.wav */ = {isa = PBXFileReference; lastKnownFileType = audio.wav; name = test.wav; path = ../../../Downloads/test.wav; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -237,7 +235,6 @@
 		40B628BF1B27BF810003B318 /* TKitDemo */ = {
 			isa = PBXGroup;
 			children = (
-				40B629771B37959C0003B318 /* test.wav */,
 				40B628C21B27BF810003B318 /* AppDelegate.swift */,
 				40B628C41B27BF810003B318 /* ViewController.swift */,
 				40B628C61B27BF810003B318 /* Main.storyboard */,
@@ -433,7 +430,6 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				40B629781B37959C0003B318 /* test.wav in Resources */,
 				40B628C81B27BF810003B318 /* Main.storyboard in Resources */,
 				40B628CD1B27BF810003B318 /* LaunchScreen.xib in Resources */,
 				40B628CA1B27BF810003B318 /* Images.xcassets in Resources */,
