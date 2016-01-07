@@ -31,7 +31,7 @@
 		140D5D2585B519D7DE877796 /* Pods-TKit_Tests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TKit_Tests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TKit_Tests/Pods-TKit_Tests.release.xcconfig"; sourceTree = "<group>"; };
 		40922065BD0ABBC0442F3AD4 /* Pods-TKit_Example.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TKit_Example.release.xcconfig"; path = "Pods/Target Support Files/Pods-TKit_Example/Pods-TKit_Example.release.xcconfig"; sourceTree = "<group>"; };
 		5297F033A5650A206C9431CC /* LICENSE */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = LICENSE; path = ../LICENSE; sourceTree = "<group>"; };
-		5D2897150524840354BD0995 /* TKit.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TKit.podspec; path = ../TKit.podspec; sourceTree = "<group>"; };
+		5D2897150524840354BD0995 /* TK.podspec */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text; name = TK.podspec; path = ../TK.podspec; sourceTree = "<group>"; };
 		607FACD01AFB9204008FA782 /* TKit_Example.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TKit_Example.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		607FACD41AFB9204008FA782 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		607FACD51AFB9204008FA782 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
@@ -143,7 +143,7 @@
 		607FACF51AFB993E008FA782 /* Podspec Metadata */ = {
 			isa = PBXGroup;
 			children = (
-				5D2897150524840354BD0995 /* TKit.podspec */,
+				5D2897150524840354BD0995 /* TK.podspec */,
 				BA5AF9B6B419CBD6C1C7F04A /* README.md */,
 				5297F033A5650A206C9431CC /* LICENSE */,
 			);

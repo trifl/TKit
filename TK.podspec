@@ -7,7 +7,7 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = "TKit by trifl"
+  s.name             = "TK"
   s.version          = "0.9.0"
   s.summary          = "TKit is a Swift toolkit made by trifl."
 
