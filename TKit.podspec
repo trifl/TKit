@@ -7,9 +7,9 @@
 #
 
 Pod::Spec.new do |s|
-  s.name             = "TKit"
-  s.version          = "0.1.0"
-  s.summary          = "A short description of TKit."
+  s.name             = "TKit by trifl"
+  s.version          = "0.9.0"
+  s.summary          = "TKit is a Swift toolkit made by trifl."
 
 # This description is used to generate tags and improve search results.
 #   * Think: What does it do? Why did you write it? What is the focus?
@@ -17,13 +17,14 @@ Pod::Spec.new do |s|
 #   * Write the description between the DESC delimiters below.
 #   * Finally, don't worry about the indent, CocoaPods strips it!  
   s.description      = <<-DESC
+                       TKit is a Swift toolkit made by trifl. Enjoy!
                        DESC
 
-  s.homepage         = "https://github.com/<GITHUB_USERNAME>/TKit"
+s.homepage         = "https://github.com/trifl/TKit"
   # s.screenshots     = "www.example.com/screenshots_1", "www.example.com/screenshots_2"
   s.license          = 'MIT'
   s.author           = { "JP McGlone" => "jp@trifl.co" }
-  s.source           = { :git => "https://github.com/<GITHUB_USERNAME>/TKit.git", :tag => s.version.to_s }
+  s.source           = { :git => "https://github.com/trifl/TKit.git", :tag => s.version.to_s }
   # s.social_media_url = 'https://twitter.com/<TWITTER_USERNAME>'
 
   s.platform     = :ios, '8.0'
