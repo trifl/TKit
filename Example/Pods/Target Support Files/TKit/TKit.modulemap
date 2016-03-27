@@ -1,6 +1,0 @@
-framework module TKit {
-  umbrella header "TKit-umbrella.h"
-
-  export *
-  module * { export * }
-}

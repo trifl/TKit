@@ -84,8 +84,8 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "Pods-TKit_Example/TKit.framework"
+  install_framework "Pods-TKit_Example/TK.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "Pods-TKit_Example/TKit.framework"
+  install_framework "Pods-TKit_Example/TK.framework"
 fi

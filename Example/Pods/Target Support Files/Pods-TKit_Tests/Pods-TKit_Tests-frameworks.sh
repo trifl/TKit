@@ -84,12 +84,12 @@ strip_invalid_archs() {
 
 
 if [[ "$CONFIGURATION" == "Debug" ]]; then
-  install_framework "Pods-TKit_Tests/TKit.framework"
+  install_framework "Pods-TKit_Tests/TK.framework"
   install_framework "Pods-TKit_Tests/Nimble.framework"
   install_framework "Pods-TKit_Tests/Quick.framework"
 fi
 if [[ "$CONFIGURATION" == "Release" ]]; then
-  install_framework "Pods-TKit_Tests/TKit.framework"
+  install_framework "Pods-TKit_Tests/TK.framework"
   install_framework "Pods-TKit_Tests/Nimble.framework"
   install_framework "Pods-TKit_Tests/Quick.framework"
 fi

@@ -1,7 +1,7 @@
 # Acknowledgements
 This application makes use of the following third party libraries:
 
-## TKit
+## TK
 
 Copyright (c) 2016 JP McGlone <jp@trifl.co>
 

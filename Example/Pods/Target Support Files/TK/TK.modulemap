@@ -1,0 +1,6 @@
+framework module TK {
+  umbrella header "TK-umbrella.h"
+
+  export *
+  module * { export * }
+}
