@@ -26,7 +26,7 @@ open class TKTimer {
     timer = Timer.scheduledTimer(
       timeInterval: 1.0 / fps,
       target: self,
-      selector: Selector("fireTimeFunction"),
+      selector: Selector(("fireTimeFunction")),
       userInfo: nil,
       repeats: true
     )
