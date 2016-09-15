@@ -1,30 +1,30 @@
 import Foundation
 
-public class TKTimer {
-  public var fps = 60.0
+open class TKTimer {
+  open var fps = 60.0
   
-  private var initialDate: NSDate!
-  private var timer = NSTimer()
-  private var timeFunction: ((Double) -> Bool)?
-  private var duration = 0.0
-  private var usesDuration = false
+  fileprivate var initialDate: Date!
+  fileprivate var timer = Timer()
+  fileprivate var timeFunction: ((Double) -> Bool)?
+  fileprivate var duration = 0.0
+  fileprivate var usesDuration = false
   
   public init(fps: Double) {
     self.fps = fps
   }
   
-  public func fire(function:(time: Double) -> Bool) {
+  open func fire(_ function:@escaping (_ time: Double) -> Bool) {
     fire(function, duration: 0)
     usesDuration = false
   }
   
-  public func fire(function:(time: Double) -> Bool, duration: NSTimeInterval) {
+  open func fire(_ function:@escaping (_ time: Double) -> Bool, duration: TimeInterval) {
     invalidate()
     timeFunction = function
-    initialDate = NSDate()
+    initialDate = Date()
     self.duration = duration
-    timer = NSTimer.scheduledTimerWithTimeInterval(
-      1.0 / fps,
+    timer = Timer.scheduledTimer(
+      timeInterval: 1.0 / fps,
       target: self,
       selector: Selector("fireTimeFunction"),
       userInfo: nil,
@@ -32,15 +32,15 @@ public class TKTimer {
     )
   }
   
-  public func invalidate() {
+  open func invalidate() {
     timer.invalidate()
     duration = 0.0
     usesDuration = true
   }
   
-  private func fireTimeFunction() {
+  fileprivate func fireTimeFunction() {
     if let timeFunction = timeFunction {
-      var time = NSDate().timeIntervalSinceDate(initialDate)
+      var time = Date().timeIntervalSince(initialDate)
       
       // This makes sure it always ends at duration where you are intending it to end, unless
       // explicitly stopped

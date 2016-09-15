@@ -6,9 +6,9 @@ extension String {
   public func tk_stringByURLEncoding() -> String {
     return CFURLCreateStringByAddingPercentEscapes(
       nil,
-      self,
+      self as CFString!,
       nil,
-      "!*'();:@&=+$,/?%#[]",CFStringBuiltInEncodings.UTF8.rawValue
+      "!*'();:@&=+$,/?%#[]" as CFString!,CFStringBuiltInEncodings.UTF8.rawValue
       ) as String
   }
 }

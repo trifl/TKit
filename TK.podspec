@@ -8,7 +8,7 @@
 
 Pod::Spec.new do |s|
   s.name             = "TK"
-  s.version          = "0.10.0"
+  s.version          = "3.0.0"
   s.summary          = "TKit is a Swift toolkit made by trifl."
 
 # This description is used to generate tags and improve search results.
@@ -31,9 +31,9 @@ s.homepage         = "https://github.com/trifl/TKit"
   s.requires_arc = true
 
   s.source_files = 'Pod/Classes/**/*'
-  s.resource_bundles = {
-    'TKit' => ['Pod/Assets/*.png']
-  }
+  #s.resource_bundles = {
+  #  'TKit' => ['Pod/Assets/*.png']
+  #}
 
   # s.public_header_files = 'Pod/Classes/**/*.h'
   # s.frameworks = 'UIKit', 'MapKit'

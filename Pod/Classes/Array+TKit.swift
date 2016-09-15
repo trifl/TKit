@@ -1,9 +1,9 @@
 extension Array {
-  mutating func tk_remove<U: Equatable>(object: U) -> Bool {
-    for (idx, objectToCompare) in enumerate() {
+  mutating func tk_remove<U: Equatable>(_ object: U) -> Bool {
+    for (idx, objectToCompare) in enumerated() {
       if let to = objectToCompare as? U {
         if object == to {
-          removeAtIndex(idx)
+          remove(at: idx)
           return true
         }
       }

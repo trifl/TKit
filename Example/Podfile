@@ -1,13 +1,14 @@
 source 'https://github.com/CocoaPods/Specs.git'
+platform :ios, '9.0'
 use_frameworks!
 
-target 'TKit_Example', :exclusive => true do
+target 'TKit_Example' do
   pod "TK", :path => "../"
 end
 
-target 'TKit_Tests', :exclusive => true do
-  pod "TK", :path => "../"
-
-  pod 'Quick'
-  pod 'Nimble'
-end
+#target 'TKit_Tests' do
+#  pod "TK", :path => "../"
+#
+#  pod 'Quick'
+#  pod 'Nimble'
+#end

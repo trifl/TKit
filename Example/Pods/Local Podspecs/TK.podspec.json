@@ -1,6 +1,6 @@
 {
   "name": "TK",
-  "version": "0.9.0",
+  "version": "3.0.0",
   "summary": "TKit is a Swift toolkit made by trifl.",
   "description": "TKit is a Swift toolkit made by trifl. Enjoy!",
   "homepage": "https://github.com/trifl/TKit",
@@ -10,7 +10,7 @@
   },
   "source": {
     "git": "https://github.com/trifl/TKit.git",
-    "tag": "0.9.0"
+    "tag": "3.0.0"
   },
   "platforms": {
     "ios": "8.0"

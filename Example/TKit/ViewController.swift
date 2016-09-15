@@ -10,16 +10,16 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        view1.tk_size = CGSizeMake(50, 50)
-        view1.backgroundColor = .redColor()
-        view2.tk_size = CGSizeMake(50, 50)
-        view2.backgroundColor = .greenColor()
+        view1.tk_size = CGSize(width: 50, height: 50)
+        view1.backgroundColor = .red()
+        view2.tk_size = CGSize(width: 50, height: 50)
+        view2.backgroundColor = .green()
         
-        view3.tk_size = CGSizeMake(100, 100)
-        view3.backgroundColor = .blueColor()
+        view3.tk_size = CGSize(width: 100, height: 100)
+        view3.backgroundColor = .blue()
         
-        view4.tk_size = CGSizeMake(50, 100)
-        view4.backgroundColor = .grayColor()
+        view4.tk_size = CGSize(width: 50, height: 100)
+        view4.backgroundColor = .gray()
         
         view.addSubview(view1)
         view.addSubview(view2)

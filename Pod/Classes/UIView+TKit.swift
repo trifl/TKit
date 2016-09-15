@@ -1,7 +1,7 @@
 import UIKit
 
 public enum TKLayoutOrientation {
-    case Horizontal, Vertical
+    case horizontal, vertical
 }
 
 public protocol TKLayoutItem { }
@@ -58,7 +58,7 @@ public extension UIView {
     }
     
     // Similar to center, but in relation to itself
-    public var tk_middle: CGPoint { get { return CGPointMake(tk_width / 2, tk_height / 2) }
+    public var tk_middle: CGPoint { get { return CGPoint(x: tk_width / 2, y: tk_height / 2) }
         set(middle) {
             center.x += (self.tk_middle.x - middle.x)
             center.y += (self.tk_middle.y - middle.y)
@@ -66,14 +66,14 @@ public extension UIView {
     }
     
     // Heirarchy
-    public func tk_bringToFront() -> UIView { superview?.bringSubviewToFront(self); return self }
-    public func tk_sendToBack() -> UIView { superview?.sendSubviewToBack(self); return self }
+    public func tk_bringToFront() -> UIView { superview?.bringSubview(toFront: self); return self }
+    public func tk_sendToBack() -> UIView { superview?.sendSubview(toBack: self); return self }
     
     // Frame in other views
     public func tk_frameInWindow() -> CGRect { return tk_frameInView(nil) }
-    public func tk_frameInView(view: UIView?) -> CGRect { return convertRect(bounds, toView: view) }
+    public func tk_frameInView(_ view: UIView?) -> CGRect { return convert(bounds, to: view) }
     
-    public func tk_moveToView(view: UIView?) {
+    public func tk_moveToView(_ view: UIView?) {
         view?.addSubview(self)
         frame = tk_frameInView(view)
     }
@@ -88,7 +88,7 @@ public extension UIView {
      
      - [1, view1, 0.5, view2, 1] will space out view1 and view2 such that the margin of the left and the right are the same, but the space between the views will be half that of the margin
      */
-    public func tk_layout(orientation: TKLayoutOrientation, items: [TKLayoutItem]) {
+    public func tk_layout(_ orientation: TKLayoutOrientation, items: [TKLayoutItem]) {
         var delta: CGFloat = 0
         var totalPercentage: CGFloat = 0
         
@@ -96,9 +96,9 @@ public extension UIView {
         for item in items {
             if let view = item as? UIView {
                 switch orientation {
-                case .Horizontal:
+                case .horizontal:
                     delta += view.tk_width
-                case .Vertical:
+                case .vertical:
                     delta += view.tk_height
                 }
             } else if let number = item as? Int {
@@ -112,9 +112,9 @@ public extension UIView {
         
         // Leftover delta
         var leftoverDelta: CGFloat!
-        if orientation == .Horizontal {
+        if orientation == .horizontal {
             leftoverDelta = tk_width - delta
-        } else if orientation == .Vertical {
+        } else if orientation == .vertical {
             leftoverDelta = tk_height - delta
         }
         
@@ -125,10 +125,10 @@ public extension UIView {
         for item in items {
             if let view = item as? UIView {
                 switch orientation {
-                case .Horizontal:
+                case .horizontal:
                     view.tk_left = delta
                     delta = view.tk_right
-                case .Vertical:
+                case .vertical:
                     view.tk_top = delta
                     delta = view.tk_bottom
                 }
